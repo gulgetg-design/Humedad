@@ -42,7 +42,7 @@ jobs:
           OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
         run: |
           set +e
-          python swi_estaciones.py
+          python Humedad.py
           CODE=$?
           set -e
           echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
