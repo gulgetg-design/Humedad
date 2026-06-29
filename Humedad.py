@@ -87,7 +87,7 @@ def parse_coord(valor):
 
 
 def cargar_estaciones():
-    df = pd.read_csv(ESTACIONES_CSV)
+    df = pd.read_csv(ESTACIONES_CSV, sep=";")
     if COL_COORD and COL_COORD in df.columns:
         coords = df[COL_COORD].map(parse_coord)
         df = df[coords.notna()].copy()
