@@ -57,7 +57,7 @@ PARCIALES_DIR = "swi_parciales"   # un CSV por (estacion, ventana) — permite r
 
 # Robustez
 MAX_REINTENTOS = 3
-PAUSA_ENTRE_PEDIDOS = 3.0     # segundos
+PAUSA_ENTRE_PEDIDOS = 5.0     # segundos
 PAUSA_REINTENTO = 20.0
 
 
