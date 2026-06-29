@@ -30,9 +30,12 @@ INTERVALO_ESPERA = 120         # cada cuánto rechequear cupo (seg)
 CSV_KM = r"C:\Users\xaxa41\OneDrive - PAE\Documentos\Trabajos\Volumen - Prediccion\km_calculado.csv"
 
 # Colección y bandas SWI
-SWI_COLLECTION = "clms-swi-v4-global-daily"   # si falla, usar listar_ids_swi
-SWI_BANDS = ["SWI_002", "SWI_005", "SWI_010", "SWI_015",
-             "SWI_020", "SWI_040", "SWI_060", "SWI_100"]
+SWI_COLLECTION = "CLMS_SWI_GLOBAL_12_5KM_10DAILY_V4"
+
+# TODAS las profundidades disponibles del SWI global.
+SWI_BANDS = ["swi001", "swi005", "swi010", "swi015",
+             "swi020", "swi040", "swi060", "swi100"]
+
 
 # Período y tamaño de ventana
 FECHA_INICIO = "2021-01-01"
