@@ -38,7 +38,7 @@ SWI_BANDS = ["swi001", "swi005", "swi010", "swi015",
 
 
 # Período y tamaño de ventana
-FECHA_INICIO = "2021-01-01"
+FECHA_INICIO = "2026-01-01"
 FECHA_FIN    = date.today().strftime("%Y-%m-%d")
 VENTANA_MESES = 4
 
