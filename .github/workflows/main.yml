@@ -1,75 +1,55 @@
-name: Extraer SWI por estación
+name: SWI Data Pipeline
 
-# Cómo se dispara:
 on:
-  workflow_dispatch:        # botón manual en la pestaña Actions
   schedule:
-    - cron: "0 6 1,11,21 * *"   # decadal: días 1, 11 y 21 a las 06:00 UTC
-
-# Permiso para que el workflow pueda commitear los resultados al repo
-permissions:
-  contents: write
-
-# Evita que dos corridas se pisen
-concurrency:
-  group: swi-extraccion
-  cancel-in-progress: false
+    # Corre cada 45 minutos automáticamente (puedes ajustar el tiempo)
+    - cron: '*/45 * * * *'
+  workflow_dispatch:
+    # Esto te permite activar el proceso manualmente desde la web de GitHub si no quieres esperar al cron
 
 jobs:
-  extraer:
+  run-pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 350      # tope ~5.8 h (el máximo de Actions es 6 h)
 
     steps:
-      - name: Clonar el repo
-        uses: actions/checkout@v4
+    # 1. Clonar el repositorio en la máquina virtual
+    - name: Checkout del repositorio
+      uses: actions/checkout@v4
 
-      - name: Instalar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+    # 2. Configurar el entorno de Python
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        cache: 'pip' # Optimiza el tiempo instalando dependencias
 
-      - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          pip install openeo geopandas shapely pandas python-dateutil
+    # 3. Instalar las dependencias necesarias
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas geopandas openeo python-dateutil pyarrow
 
-      - name: Correr extracción SWI
-        id: run
-        continue-on-error: true     # no falla el job si quedó incompleto
-        env:
-          OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
-          OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
-        run: |
-          set +e
-          python Humedad.py
-          CODE=$?
-          set -e
-          echo "exit_code=$CODE" >> "$GITHUB_OUTPUT"
-          echo "El script terminó con código $CODE"
+    # 4. Crear la carpeta de salida si no existe y recuperar descargas previas
+    # Usamos Git para mantener el estado de lo que ya se descargó en ejecuciones anteriores
+    - name: Ejecutar Script 1 - Enviar Jobs
+      env:
+        OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
+        OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+      run: python swi_1_enviar.py
 
-      - name: Guardar resultados en el repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add swi_parciales/ swi_estaciones.csv 2>/dev/null || true
-          if git diff --staged --quiet; then
-            echo "Sin cambios para commitear"
-          else
-            git commit -m "SWI: avance de extracción [skip ci]"
-            git pull --rebase --autostash origin ${{ github.ref_name }} || true
-            git push
-          fi
+    # 5. Ejecutar el Script 2 - Descargar y Consolidar
+    - name: Ejecutar Script 2 - Descargar Jobs
+      env:
+        OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
+        OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+      run: python swi_2_descargar.py
 
-      - name: Re-disparar si quedó incompleto
-        if: steps.run.outputs.exit_code == '2'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Quedaron parciales pendientes. Re-disparando el workflow..."
-          sleep 30
-          gh workflow run swi.yml --ref ${{ github.ref_name }}
-
-      - name: Avisar si está completo
-        if: steps.run.outputs.exit_code == '0'
-        run: echo "✓ Extracción COMPLETA. Todos los parciales descargados."
+    # 6. Guardar los CSVs descargados de vuelta en tu repositorio de GitHub
+    # De esta forma, la próxima vez que corra el Action, sabrá qué estaciones ya se completaron.
+    - name: Guardar cambios y descargas en el repositorio
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
+        # Solo hace commit si realmente hay archivos nuevos para evitar errores
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de datos SWI [skip ci]" && git push)
