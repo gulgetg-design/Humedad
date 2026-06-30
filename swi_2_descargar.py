@@ -30,7 +30,7 @@ SWI_SCALE = 0.5
 SWI_NODATA = 255
 
 # Exigir que TODOS los jobs SWI estén terminados antes de bajar (como tu EVI).
-EXIGIR_TODOS_TERMINADOS = True
+EXIGIR_TODOS_TERMINADOS = False
 
 # ───────────────────────────────────────────────────────────────────
 # LOGGING
