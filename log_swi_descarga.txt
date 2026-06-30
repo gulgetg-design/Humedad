@@ -732,3 +732,160 @@
 2026-06-30 17:31:21,240 - ❌ Error mergeando 230994: list index out of range
 2026-06-30 17:31:21,240 - === FIN DESCARGA SWI ===
 2026-06-30 17:31:21,241 - 📝 Faltantes escritos en swi_faltantes.txt: 0 de 110
+2026-06-30 19:26:34,138 - === INICIO DESCARGA SWI ===
+2026-06-30 19:26:34,138 - Loaded openEO client config from sources: []
+2026-06-30 19:26:35,832 - Found OIDC providers: ['CDSE']
+2026-06-30 19:26:35,832 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-06-30 19:26:36,351 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-03305422-8f0c-4234-bc98-cda401383433')
+2026-06-30 19:26:36,904 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-06-30 19:26:36,904 - Autenticado OK.
+2026-06-30 19:26:37,371 - Jobs SWI encontrados: 100
+2026-06-30 19:26:37,371 - ❌ 3 jobs con ERROR: ['SWI_229804_20260501', 'SWI_229769_20260501', 'SWI_229769_20260101']...
+2026-06-30 19:26:37,371 - ✅ Descargando 90 jobs terminados...
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229804_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229769_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229769_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229804_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229769_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_229769_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_234169_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_234169_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_234076_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_234076_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231995_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231995_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231938_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231938_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231895_20260501.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231895_20260101.csv
+2026-06-30 19:26:37,372 - ⏩ Ya existe: SWI_231879_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231879_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231873_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231873_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231854_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231854_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231853_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231853_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231849_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231849_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231815_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231815_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231668_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231668_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231667_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231667_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231656_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231656_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231612_20260501.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231612_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_231608_20260101.csv
+2026-06-30 19:26:37,373 - ⏩ Ya existe: SWI_229804_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_229769_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_229769_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231458_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231457_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231457_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231426_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231426_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231368_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231368_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231362_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231362_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231048_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231048_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231003_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_231003_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230994_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230994_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230993_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230993_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230986_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230986_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230958_20260501.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230958_20260101.csv
+2026-06-30 19:26:37,374 - ⏩ Ya existe: SWI_230918_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230918_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230848_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230848_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230801_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230801_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230709_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230709_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230667_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230667_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230381_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230352_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230352_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230068_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230010_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_230010_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229901_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229901_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229807_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229807_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229804_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229546_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229546_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229273_20260501.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229273_20260101.csv
+2026-06-30 19:26:37,375 - ⏩ Ya existe: SWI_229270_20260501.csv
+2026-06-30 19:26:37,376 - ⏩ Ya existe: SWI_229270_20260101.csv
+2026-06-30 19:26:37,376 - ⏩ Ya existe: SWI_224258_20260501.csv
+2026-06-30 19:26:37,376 - ⏩ Ya existe: SWI_224258_20260101.csv
+2026-06-30 19:26:37,383 - ❌ Error mergeando 229769: 'fecha'
+2026-06-30 19:26:37,384 - ❌ Error mergeando 229273: list index out of range
+2026-06-30 19:26:37,386 - ❌ Error mergeando 231612: list index out of range
+2026-06-30 19:26:37,387 - ❌ Error mergeando 229901: list index out of range
+2026-06-30 19:26:37,388 - ❌ Error mergeando 231470: list index out of range
+2026-06-30 19:26:37,390 - ❌ Error mergeando 231895: list index out of range
+2026-06-30 19:26:37,391 - ❌ Error mergeando 231003: list index out of range
+2026-06-30 19:26:37,392 - ❌ Error mergeando 224258: list index out of range
+2026-06-30 19:26:37,393 - ❌ Error mergeando 231853: list index out of range
+2026-06-30 19:26:37,395 - ❌ Error mergeando 230010: list index out of range
+2026-06-30 19:26:37,396 - ❌ Error mergeando 234169: list index out of range
+2026-06-30 19:26:37,397 - ❌ Error mergeando 231995: list index out of range
+2026-06-30 19:26:37,398 - ❌ Error mergeando 231528: list index out of range
+2026-06-30 19:26:37,399 - ❌ Error mergeando 231879: list index out of range
+2026-06-30 19:26:37,401 - ❌ Error mergeando 230709: list index out of range
+2026-06-30 19:26:37,402 - ❌ Error mergeando 229804: list index out of range
+2026-06-30 19:26:37,403 - ❌ Error mergeando 230958: list index out of range
+2026-06-30 19:26:37,404 - ❌ Error mergeando 230986: list index out of range
+2026-06-30 19:26:37,406 - ❌ Error mergeando 231873: list index out of range
+2026-06-30 19:26:37,407 - ❌ Error mergeando 231458: list index out of range
+2026-06-30 19:26:37,408 - ❌ Error mergeando 231527: list index out of range
+2026-06-30 19:26:37,409 - ❌ Error mergeando 231656: list index out of range
+2026-06-30 19:26:37,411 - ❌ Error mergeando 234462: list index out of range
+2026-06-30 19:26:37,412 - ❌ Error mergeando 231460: list index out of range
+2026-06-30 19:26:37,413 - ❌ Error mergeando 230366: list index out of range
+2026-06-30 19:26:37,414 - ❌ Error mergeando 229807: list index out of range
+2026-06-30 19:26:37,415 - ❌ Error mergeando 229546: list index out of range
+2026-06-30 19:26:37,417 - ❌ Error mergeando 230848: list index out of range
+2026-06-30 19:26:37,418 - ❌ Error mergeando 234076: list index out of range
+2026-06-30 19:26:37,419 - ❌ Error mergeando 230801: list index out of range
+2026-06-30 19:26:37,420 - ❌ Error mergeando 234374: list index out of range
+2026-06-30 19:26:37,422 - ❌ Error mergeando 231668: list index out of range
+2026-06-30 19:26:37,423 - ❌ Error mergeando 230352: list index out of range
+2026-06-30 19:26:37,424 - ❌ Error mergeando 230381: list index out of range
+2026-06-30 19:26:37,425 - ❌ Error mergeando 231368: list index out of range
+2026-06-30 19:26:37,426 - ❌ Error mergeando 231426: list index out of range
+2026-06-30 19:26:37,428 - ❌ Error mergeando 231849: list index out of range
+2026-06-30 19:26:37,429 - ❌ Error mergeando 230918: list index out of range
+2026-06-30 19:26:37,430 - ❌ Error mergeando 231608: list index out of range
+2026-06-30 19:26:37,431 - ❌ Error mergeando 230667: list index out of range
+2026-06-30 19:26:37,433 - ❌ Error mergeando 230993: list index out of range
+2026-06-30 19:26:37,434 - ❌ Error mergeando 231584: list index out of range
+2026-06-30 19:26:37,435 - ❌ Error mergeando 194432: list index out of range
+2026-06-30 19:26:37,436 - ❌ Error mergeando 229270: list index out of range
+2026-06-30 19:26:37,437 - ❌ Error mergeando 231938: list index out of range
+2026-06-30 19:26:37,439 - ❌ Error mergeando 230068: list index out of range
+2026-06-30 19:26:37,440 - ❌ Error mergeando 189087: list index out of range
+2026-06-30 19:26:37,441 - ❌ Error mergeando 231048: list index out of range
+2026-06-30 19:26:37,442 - ❌ Error mergeando 231854: list index out of range
+2026-06-30 19:26:37,444 - ❌ Error mergeando 231667: list index out of range
+2026-06-30 19:26:37,445 - ❌ Error mergeando 231815: list index out of range
+2026-06-30 19:26:37,446 - ❌ Error mergeando 231599: list index out of range
+2026-06-30 19:26:37,447 - ❌ Error mergeando 231362: list index out of range
+2026-06-30 19:26:37,448 - ❌ Error mergeando 231457: list index out of range
+2026-06-30 19:26:37,450 - ❌ Error mergeando 230994: list index out of range
+2026-06-30 19:26:37,450 - === FIN DESCARGA SWI ===
+2026-06-30 19:26:37,451 - 📝 Faltantes escritos en swi_faltantes.txt: 0 de 110

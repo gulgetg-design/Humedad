@@ -795,3 +795,26 @@
 2026-06-30 17:30:33,769 -   ✅ Hay lugar (6/30 activos).
 2026-06-30 17:30:38,755 -   📤 Enviado: SWI_229804_20260501 → j-2606301730354722acf7f0c007774b91
 2026-06-30 17:30:48,878 - === FIN ENVÍO SWI ===
+2026-06-30 19:25:47,650 - === INICIO ENVÍO SWI ===
+2026-06-30 19:25:47,650 - BASE_DIR: /home/runner/work/Humedad/Humedad
+2026-06-30 19:25:47,653 - CSV km_calculado leído: 55 filas
+2026-06-30 19:25:47,653 - Loaded openEO client config from sources: []
+2026-06-30 19:25:49,589 - Autenticando...
+2026-06-30 19:25:49,722 - Found OIDC providers: ['CDSE']
+2026-06-30 19:25:49,722 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-06-30 19:25:50,743 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-03305422-8f0c-4234-bc98-cda401383433')
+2026-06-30 19:25:51,285 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-06-30 19:25:51,286 - Autenticado OK.
+2026-06-30 19:25:51,286 - Ventanas de 4 meses: 2 (2026-01-01 → 2026-06-30)
+2026-06-30 19:25:51,757 - Ya descargados: 114 | jobs vivos: 91 | con error (a reintentar): 3
+2026-06-30 19:25:51,758 - Estaciones: 55 → 110 jobs totales
+2026-06-30 19:25:51,778 -   ♻️ Reintentando (tuvo error): SWI_229769_20260101
+2026-06-30 19:25:52,185 -   ✅ Hay lugar (4/30 activos).
+2026-06-30 19:25:56,152 -   📤 Enviado: SWI_229769_20260101 → j-26063019255348328672bc5c929328fd
+2026-06-30 19:26:06,162 -   ♻️ Reintentando (tuvo error): SWI_229769_20260501
+2026-06-30 19:26:06,473 -   ✅ Hay lugar (5/30 activos).
+2026-06-30 19:26:10,320 -   📤 Enviado: SWI_229769_20260501 → j-2606301926074f4eb097ee4b39e9b236
+2026-06-30 19:26:20,334 -   ♻️ Reintentando (tuvo error): SWI_229804_20260501
+2026-06-30 19:26:20,641 -   ✅ Hay lugar (6/30 activos).
+2026-06-30 19:26:23,421 -   📤 Enviado: SWI_229804_20260501 → j-2606301926214934a98a07ff867ddc06
+2026-06-30 19:26:33,546 - === FIN ENVÍO SWI ===
