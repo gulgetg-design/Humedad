@@ -38,12 +38,12 @@ jobs:
         pip install pandas geopandas openeo python-dateutil pyarrow
 
     # 4. Ejecutar Script 1 - Enviar Jobs
-    - name: Ejecutar Script 1 - Enviar Jobs
-      env:
-        OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
-        OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
-        PYTHONUNBUFFERED: "1"
-      run: python swi_1_enviar.py
+    #- name: Ejecutar Script 1 - Enviar Jobs
+    #  env:
+    #    OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
+    #    OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+    #    PYTHONUNBUFFERED: "1"
+    # run: python swi_1_enviar.py
 
     # 5. Ejecutar Script 2 - Descargar Jobs
     - name: Ejecutar Script 2 - Descargar Jobs
