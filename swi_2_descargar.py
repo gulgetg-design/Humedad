@@ -13,6 +13,7 @@ Credenciales por entorno (NO hardcodear).
 """
 import os, logging, re
 from datetime import date
+from dateutil.relativedelta import relativedelta
 import pandas as pd
 import openeo
 
@@ -29,7 +30,13 @@ SWI_BANDS = ["SWI_002", "SWI_005", "SWI_010", "SWI_015",
 SWI_SCALE = 0.5
 SWI_NODATA = 255
 
-# Exigir que TODOS los jobs SWI estén terminados antes de bajar (como tu EVI).
+# Mismo período y ventana que el envío (para saber qué se espera y qué falta)
+FECHA_INICIO = "2026-01-01"
+VENTANA_MESES = 4
+ARCHIVO_FALTANTES = os.path.join(BASE_DIR, "swi_faltantes.txt")
+
+# Bajar lo que esté listo en CADA corrida (no esperar a que terminen todos).
+# Para un pipeline que corre cada 45 min, esto va descargando incrementalmente.
 EXIGIR_TODOS_TERMINADOS = False
 
 # ───────────────────────────────────────────────────────────────────
@@ -112,7 +119,7 @@ for jinfo in terminados:
 # ───────────────────────────────────────────────────────────────────
 # 3. MERGE INCREMENTAL POR ESTACIÓN (junta todas las ventanas)
 # ───────────────────────────────────────────────────────────────────
-pepe = pd.read_csv("km_calculado.csv", sep=";")
+pepe = pd.read_csv(CSV_KM, sep=";")
 estaciones = (pepe.groupby("SHIP TO")["km_calculado"].min()
               .sort_values().index.tolist())
 
@@ -160,3 +167,47 @@ for id_estacion in estaciones:
         log(f"❌ Error mergeando {id_estacion}: {e}")
 
 log("=== FIN DESCARGA SWI ===")
+
+# ───────────────────────────────────────────────────────────────────
+# 4. REPORTE DE FALTANTES → swi_faltantes.txt
+# Calcula el universo esperado (estaciones × ventanas desde FECHA_INICIO) y
+# resta lo que YA está descargado en la carpeta. Lo que queda, falta.
+# ───────────────────────────────────────────────────────────────────
+def ventanas_4m(inicio, fin, meses=VENTANA_MESES):
+    d0, dfin = date.fromisoformat(inicio), date.fromisoformat(fin)
+    out, a = [], d0
+    while a < dfin:
+        sig = min(a + relativedelta(months=meses), dfin)
+        out.append(a.isoformat()); a = sig
+    return out
+
+hoy = date.today().isoformat()
+ventanas_inicio = ventanas_4m(FECHA_INICIO, hoy)   # solo la fecha "desde" de cada una
+ids_estaciones = pepe.drop_duplicates(subset=["SHIP TO"])["SHIP TO"].astype(int).tolist()
+
+# Crudos ya descargados en la carpeta: SWI_{est}_{AAAAMMDD}.csv
+ya_desc = set()
+pat_crudo = re.compile(r"^SWI_(\d+)_(\d{8})\.csv$")
+for f in os.listdir(output_folder):
+    m = pat_crudo.match(f)
+    if m:
+        ya_desc.add((m.group(1), m.group(2)))
+
+faltantes = []
+for est in ids_estaciones:
+    for desde in ventanas_inicio:
+        v = desde.replace("-", "")             # AAAAMMDD
+        if (str(est), v) not in ya_desc:
+            faltantes.append(f"SWI_{est}_{v}")
+
+with open(ARCHIVO_FALTANTES, "w", encoding="utf-8") as fh:
+    fh.write(f"# Reporte de faltantes SWI — {hoy}\n")
+    fh.write(f"# Esperadas: {len(ids_estaciones)} estaciones × "
+             f"{len(ventanas_inicio)} ventanas = "
+             f"{len(ids_estaciones) * len(ventanas_inicio)}\n")
+    fh.write(f"# Descargadas: {len(ya_desc)} | Faltan: {len(faltantes)}\n\n")
+    for t in faltantes:
+        fh.write(t + "\n")
+
+log(f"📝 Faltantes escritos en {os.path.basename(ARCHIVO_FALTANTES)}: "
+    f"{len(faltantes)} de {len(ids_estaciones) * len(ventanas_inicio)}")
