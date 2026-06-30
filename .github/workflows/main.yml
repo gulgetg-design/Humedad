@@ -54,27 +54,28 @@ jobs:
       run: python swi_2_descargar.py
 
     # 6. Guardar los CSVs y logs con estrategia anti-conflictos
+    # 6. Guardar los CSVs y logs con estrategia anti-conflictos definitiva
     - name: Guardar cambios y descargas en el repositorio
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Agregamos los archivos modificados
+        # 1. Traemos la última información de GitHub al entorno oculto de Git
+        git fetch origin main
+        
+        # 2. Movemos el "reloj" de Git al último commit de la web.
+        # Esto mantiene intactos todos tus CSVs nuevos y logs modificados en el disco.
+        git reset --mixed origin main
+        
+        # 3. Agregamos la carpeta de datos y los archivos de log
         git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
         
-        # Si no hay cambios reales, el script termina pacíficamente aquí
+        # 4. Si no hay cambios reales frente a lo último que está en la web, salimos pacíficamente
         if git diff --staged --quiet; then
           echo "No hay datos nuevos ni cambios en los logs para guardar."
           exit 0
         fi
         
-        # Si hay cambios, hacemos el commit local
+        # 5. Creamos el commit y subimos directamente (será un push directo y limpio)
         git commit -m "Actualización automática de datos SWI [skip ci]"
-        
-        # ─── ESTRATEGIA ANTI-REJECTED ───
-        # Trae lo último de GitHub y, si alguien modificó el log en el camino, 
-        # acomoda lo nuestro por encima de forma limpia (-X ours)
-        git pull --rebase -X ours origin main
-        
-        # Finalmente empujamos los datos a la web
         git push origin main
