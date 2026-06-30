@@ -48,10 +48,12 @@ jobs:
 
     # 6. Guardar los CSVs descargados de vuelta en tu repositorio de GitHub
     # De esta forma, la próxima vez que corra el Action, sabrá qué estaciones ya se completaron.
+    # 6. Guardar los CSVs descargados de vuelta en tu repositorio de GitHub
     - name: Guardar cambios y descargas en el repositorio
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
-        # Solo hace commit si realmente hay archivos nuevos para evitar errores
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de datos SWI [skip ci]" && git push)
+        
+        # ─── MODIFICAMOS ESTA LÍNEA ABAJO PARA INCLUIR EL PULL REBASE ───
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de datos SWI [skip ci]" && git pull --rebase origin main && git push)
