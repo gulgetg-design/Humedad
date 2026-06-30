@@ -416,3 +416,147 @@
 2026-06-30 15:13:32,757 - ❌ Error mergeando 230994: list index out of range
 2026-06-30 15:13:32,757 - === FIN DESCARGA SWI ===
 2026-06-30 15:13:32,758 - 📝 Faltantes escritos en swi_faltantes.txt: 24 de 110
+2026-06-30 15:20:08,555 - === INICIO DESCARGA SWI ===
+2026-06-30 15:20:08,556 - Loaded openEO client config from sources: []
+2026-06-30 15:20:10,113 - Found OIDC providers: ['CDSE']
+2026-06-30 15:20:10,113 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-06-30 15:20:10,744 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-03305422-8f0c-4234-bc98-cda401383433')
+2026-06-30 15:20:11,265 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-06-30 15:20:11,266 - Autenticado OK.
+2026-06-30 15:20:11,583 - Jobs SWI encontrados: 100
+2026-06-30 15:20:11,583 - ❌ 3 jobs con ERROR: ['SWI_229804_20260501', 'SWI_229769_20260501', 'SWI_229769_20260101']...
+2026-06-30 15:20:11,583 - ✅ Descargando 75 jobs terminados...
+2026-06-30 15:20:12,199 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-2606301507124b5597d6eec8cef020d1/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=9cd3128a64dd42c38108dcf29cce02b3%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152012Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNzEyNGI1NTk3ZDZlZWM4Y2VmMDIwZDEiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDEyLCJuYmYiOjE3ODI4MzI4MTIsImlhdCI6MTc4MjgzMjgxMiwianRpIjoiODg4MjU2NzAtNzg3MC00MzYzLTgyNGYtOThjMWE2MTQxMjhiIiwiYWNjZXNzX2tleV9pZCI6IjljZDMxMjhhNjRkZDQyYzM4MTA4ZGNmMjljY2UwMmIzIn0.TH69myKZ-zRpWRBoJV1lJbz2vx4ylbVahXVuIC7x9aNprlsSSG9ox0Lb44QorBbGU6sh5pjYS6fL2y4PKWNd244oPrQe4B6CcmzhB1_0IWqtNghs4j1G9jyTSu0snplEFMDg2nFU-Infq8_2iPStNKqEfGNqcZ4l946ZKs9MAGIxhRiGiTHM5xFkec35r0HJy4mcM0J4pWV-Ll_oa_BKfAdT0XDHqjW5J3HcXmeFvvgPkPXbuT3qEQu6xfgpuyZMMP8HkVJ4kJp8piIILxbzJSbMB4JvsuNFbdP4VbyfLGEg0S0A0p_psN44jnmJYBud_Os1Sru3Ss8WMtFE7ArwAw&X-Amz-Signature=ec7d0b33fe1c83042171bbcd9d27b146328b3e1931a58f9a04cb39cb80ca660f to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231854_20260101.csv
+2026-06-30 15:20:15,169 - ✅ Descargado: SWI_231854_20260101
+2026-06-30 15:20:15,729 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-26063015065844479d048913b617e90e/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=f11d8c61c63942e39b891eaa4461b83a%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152015Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNjU4NDQ0NzlkMDQ4OTEzYjYxN2U5MGUiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDE1LCJuYmYiOjE3ODI4MzI4MTUsImlhdCI6MTc4MjgzMjgxNSwianRpIjoiNDIyZDUzNGUtZTQ3ZC00M2E0LWE4MWEtNTNhMjI0OWUyYjI2IiwiYWNjZXNzX2tleV9pZCI6ImYxMWQ4YzYxYzYzOTQyZTM5Yjg5MWVhYTQ0NjFiODNhIn0.ao3HVdFuyMmcnzVDyinymnPCRhcs2uWyJoDQOpgtlePulYdIk4X2OH12xSsG96I0JV5pRAsnFDetRsDUX3lc221nSJkmcVxfC2q5eFTIqQTcK-JvOocTMfrnBNG9DHrplYCOfKbtnMzDxyWPoBf_wTwj29xtpaX1lihIRl4hYV9kjl0uPTmYLGbQXEP40jVCmGoCp1I9Va9Jz7rfBBnyKeR4dk4qGZfoOfsemqEc6lCHlMLup-PpL3xAsszVphA6wtWX3sbp9uO3_sptU6X0BXutjJA0G2dXK11-Y_Sqjj6zf0BIuj16UEf1sZEiOA30Fsf4i3irA22HMoNNVh8MEg&X-Amz-Signature=47d4311391ab0487e27f146c6b404b0f545c23d71878af77346b0f8222c3fc42 to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231853_20260501.csv
+2026-06-30 15:20:16,595 - ✅ Descargado: SWI_231853_20260501
+2026-06-30 15:20:17,334 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-26063015064449ada5d215952cd418b5/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2a5cb09121a04dc3b3313c720273b0b2%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152017Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNjQ0NDlhZGE1ZDIxNTk1MmNkNDE4YjUiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDE3LCJuYmYiOjE3ODI4MzI4MTcsImlhdCI6MTc4MjgzMjgxNywianRpIjoiNTUxNzk5NDAtMWZiOS00NjgyLThhNGEtY2E5N2E2ODhmMzk0IiwiYWNjZXNzX2tleV9pZCI6IjJhNWNiMDkxMjFhMDRkYzNiMzMxM2M3MjAyNzNiMGIyIn0.NHCtiPXPKh81gd4qsyYfn9-YYwBTBhkgm82lRZmv7TqKzyzTmA6VIjAs78_fTxKO7yrfWXJ8MDNEUzpZYJxAA2T9srPZq5I1Pc5MX3yQZgKvnhaZErIdEx99oEIqYlkpgkU3gcy1iQYGeBy7251HtVUyRsv3WV9L1Af5Fe--4pFIFRGq97Dp72adjzLdi2n6SyQXxQEzbYqfBkuDkcz4YkfrvypgTMGTr-Lpvw1v2c3qnppBWEZ0Rfq5iCpQ9Uy10FwsqeFoE0t4uU8VrQxR1qDtV0zaLSxgXyyYsByZyvMsv-mCMemK-Bb2GhfCr_sYZhYVJsgbCJHlnlaT0eJZVg&X-Amz-Signature=29065a8a3a0a395536c30ea12f6e86ac2c0cb4716f38c7f63c89d2948f406b19 to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231853_20260101.csv
+2026-06-30 15:20:18,534 - ✅ Descargado: SWI_231853_20260101
+2026-06-30 15:20:19,093 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-2606301506304819b557fcfbf7065b82/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=dbe580468fee4a53b1db59d693ad7f13%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152019Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNjMwNDgxOWI1NTdmY2ZiZjcwNjViODIiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDE4LCJuYmYiOjE3ODI4MzI4MTgsImlhdCI6MTc4MjgzMjgxOCwianRpIjoiNTBiYWI0NDgtNWRhNC00MmIwLWJjOTQtMDUxZTlkNTRjN2Q3IiwiYWNjZXNzX2tleV9pZCI6ImRiZTU4MDQ2OGZlZTRhNTNiMWRiNTlkNjkzYWQ3ZjEzIn0.vNu93S1VfSbf2g7OkFc2lCYGPZ_TR1yRW-WhSOKuK8WzHKyGR7DsBC54sTJe1lR7NVixMeIL8K7xybb1zTEuDn8gVhPwmoMxeQyB7wdKdt7pfZk5F3BdGy_YECmFw-oZtO1ExS60mlrYUKWHZbw6JhFK1xPq2gw-XNukpk-qDFiK0gXAkp35PhmUP_PdtgVSTFBqhkSyeaIp72-mqLloJ0rZ8-4SbQB5kU_DQpVhRI-_W9psVvUiPZ1jyg-p6-Qy-XxAGY-PJLMDtLL59oB9flryGtZU4zUBpAov6tMIpXvoWGWUh9Gu_3L2YF0egFX0LKZUkd0vVM8f7trvGKEBhw&X-Amz-Signature=af2aab9caefee2f23401071caac65450ef55dede598bbedf8734889626d8039e to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231849_20260501.csv
+2026-06-30 15:20:20,450 - ✅ Descargado: SWI_231849_20260501
+2026-06-30 15:20:21,056 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-2606301506164997bc943504f1d00484/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=eb0e94cabcf349129858b0090b60bb71%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152020Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNjE2NDk5N2JjOTQzNTA0ZjFkMDA0ODQiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDIwLCJuYmYiOjE3ODI4MzI4MjAsImlhdCI6MTc4MjgzMjgyMCwianRpIjoiODYwMDYxNTQtNzBiMi00NzhkLTg4MjItNDAzMmY4OGIxOGJjIiwiYWNjZXNzX2tleV9pZCI6ImViMGU5NGNhYmNmMzQ5MTI5ODU4YjAwOTBiNjBiYjcxIn0.PuHJ5U2mb2hoNpi1qNFXMf8We2q3MtrA2WLjD73JRD1s3kZqXU2qPGxtV-s-ye56S5-VDAzQ389VlgYiqNBAk9taEdcUi22EVlbGcKG1mJyd7K94nurpkH74WF-xqyywheRrawdjvhjerJzHcNVFDPW_b5mDrT8KWjPZYa_2gf9NLktGTx939ZfT-oVvWmrDHxACgo1T1voN2pqWmgk-6iVxx8QhZJY3NOUfG4019YtSDgDpL7AgnhYXKfy8pBh-Kyaex4sDCTuBtjad4W7LI9AEn8RXtFUsGKzn66P9Yp6sLUHRlD_43FQeuZ3Ydtw7E5EAVdvr9GrONLAv_UI3pw&X-Amz-Signature=5e0601c9ea4c5372c8a0030122530c9504e6b7013ef6bd864f7521e8f4d035e4 to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231849_20260101.csv
+2026-06-30 15:20:22,569 - ✅ Descargado: SWI_231849_20260101
+2026-06-30 15:20:23,206 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-260630150601414fa9404a7a09e4f617/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=eca2ea8186b24cd28b1bd9779a4939e9%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152023Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNjAxNDE0ZmE5NDA0YTdhMDllNGY2MTciXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDIzLCJuYmYiOjE3ODI4MzI4MjMsImlhdCI6MTc4MjgzMjgyMywianRpIjoiNzIxYzBmNjctNTM5ZC00NTBhLWE3NGUtYTFjYWM2MDBhMzgzIiwiYWNjZXNzX2tleV9pZCI6ImVjYTJlYTgxODZiMjRjZDI4YjFiZDk3NzlhNDkzOWU5In0.p44d3B9BHICyvXggo-b-Qfi2yX82XrjmsBis2mQJEwYhRnl3bbI_JQIq44TK_kkndjnzv3Mw8T0tlRVHPKDHH7xkshuqGhJgn3iORK3X9NSu0XnVq0y25yoXd5Odz66Gt5KnLOMbutqfwRBATcjPd5IpUvTpJSAgoxLTV6groyJagGKBDel0IP_5U7pO1H2060szod6RlsHFXuOUVVpxqapE9neyttnB17dZO0XlBbTA631096-8ysMEdGQl2NZecYU1lgVTFo9cVDVq3o0-nVl7Ptmyz-jUGkB9pkwexNwhlgO-KYX1WuQAcg1xnaMYq6gPahPDPGWX5vMifE_JGQ&X-Amz-Signature=3bd37a5bb4b79308ddfc3bc375b8873d37cd659c53dcd1064014bd0b17603d1c to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231815_20260501.csv
+2026-06-30 15:20:24,008 - ✅ Descargado: SWI_231815_20260501
+2026-06-30 15:20:24,540 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-26063015054647cfa855b3cf237c4bc6/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=73784d570aa34ca7b40efc103e306675%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152024Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNTQ2NDdjZmE4NTViM2NmMjM3YzRiYzYiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDI0LCJuYmYiOjE3ODI4MzI4MjQsImlhdCI6MTc4MjgzMjgyNCwianRpIjoiODUxZWExNDktY2QxNi00Mjg2LWIyNzgtMmMwZDUxZGZhMzY1IiwiYWNjZXNzX2tleV9pZCI6IjczNzg0ZDU3MGFhMzRjYTdiNDBlZmMxMDNlMzA2Njc1In0.k4QJrc6jVJCk9unkgv3A6rIS41gensfexmWt-QwBrClcHBGRPr-MMTaZJufCVC7HNfk3Rrth5_QXtRrNPYjXEr3q64kZb0JLvnVyEuMGc-MkD9VZj6dQ1lbLhjf3zQdxkTFU2w8VIQWg2wKwMnRUcfl9kTO17C3OOEDkZFyv82CNRMA-MVEYH5OcPVdLPgjBY5hAjRqsiL1YIF9ON2hQjNNumnz24OvCWfXJGHrC3-ezoZ7LLsJHZCVqxM1N9Jn0yUEW5HR0fRvrU11CceVC69h1B974Fru4RRqfCQ6Fw8_TkvFisx373zYCGUaliVvPpXpvnGutJyeQTWLzxOSo0Q&X-Amz-Signature=2f27c88c47dbe3ecb0a469adec5ba7db6894ac670c27cd89ab34c8461eb3520d to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231815_20260101.csv
+2026-06-30 15:20:25,800 - ✅ Descargado: SWI_231815_20260101
+2026-06-30 15:20:26,401 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-260630150532472eb5e37771e25c8e7e/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8f5f7cfad96f45beb368b6370658bfca%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152026Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNTMyNDcyZWI1ZTM3NzcxZTI1YzhlN2UiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDI2LCJuYmYiOjE3ODI4MzI4MjYsImlhdCI6MTc4MjgzMjgyNiwianRpIjoiYjQ3NGE0YzQtYTY2My00N2VkLWExOGUtNGZiMTIyZjg0MzQ2IiwiYWNjZXNzX2tleV9pZCI6IjhmNWY3Y2ZhZDk2ZjQ1YmViMzY4YjYzNzA2NThiZmNhIn0.Du_RNaTinnAwVXunM53dnu9YlLBzcJ9yXS6XGC8gEp0S0CBKXZPcuvTzAyZh7TYF4mzPnLsMxiTw_LXqvH_GB-KdjTZMDmb2TQUEL0fldFhreaJ6jLs0qjFlQeiWfucM3mtCPng2XzFOi9uvSeHNCuH6hrMOpk4nUdHxecO-mw3_rzfUYIMcRpJC6ib24U29JHQGzygoSn18_vnPmBo_MmUXD7DoTPrxciWsw41tNilgpEzJC41g7DdyEVWJzss0JKhtra5bmEZPZIOT06D6rgGxKG0SKoShjemiQJINXUifyTz6-BqdkdrYZ9UJa92g1KuW9Zz3HthmI-hEDosC3Q&X-Amz-Signature=565ad1626e1682373847406c8735c015d3727b7f11f4b85f11559e94bcbbd2a4 to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231668_20260501.csv
+2026-06-30 15:20:27,240 - ✅ Descargado: SWI_231668_20260501
+2026-06-30 15:20:27,876 - Downloading Job result asset 'timeseries.csv' from https://s3.waw3-1.openeo.v1.dataspace.copernicus.eu/openeo-data-prod-waw4-1/batch_jobs/j-2606301505174329b9b38bc1cfe46395/timeseries.csv?X-Proxy-Head-As-Get=true&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=a8bae1c1c7e048c397c8142d49319700%2F20260630%2Fwaw4-1%2Fs3%2Faws4_request&X-Amz-Date=20260630T152027Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Security-Token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlX2FybiI6ImFybjpvcGVuZW93czppYW06Ojpyb2xlL29wZW5lby1kYXRhLXByb2Qtd2F3NC0xLXdvcmtzcGFjZSIsImluaXRpYWxfaXNzdWVyIjoib3BlbmVvLnByb2Qud2F3My0xLm9wZW5lby1pbnQudjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJodHRwczovL2F3cy5hbWF6b24uY29tL3RhZ3MiOnsicHJpbmNpcGFsX3RhZ3MiOnsiam9iX2lkIjpbImotMjYwNjMwMTUwNTE3NDMyOWI5YjM4YmMxY2ZlNDYzOTUiXSwidXNlcl9pZCI6WyIyMGYzMzEzYS04MTgyLTRiNzgtYmJhYS04NzYzY2E4NWExYWIiXX0sInRyYW5zaXRpdmVfdGFnX2tleXMiOlsidXNlcl9pZCIsImpvYl9pZCJdfSwiaXNzIjoic3RzLndhdzMtMS5vcGVuZW8udjEuZGF0YXNwYWNlLmNvcGVybmljdXMuZXUiLCJzdWIiOiJvcGVuZW8tZHJpdmVyIiwiZXhwIjoxNzgyODc2MDI3LCJuYmYiOjE3ODI4MzI4MjcsImlhdCI6MTc4MjgzMjgyNywianRpIjoiYjNhMDIzMTMtMWYzNi00YWI2LTgxOTgtOTJlMzNiNDRlYWQ5IiwiYWNjZXNzX2tleV9pZCI6ImE4YmFlMWMxYzdlMDQ4YzM5N2M4MTQyZDQ5MzE5NzAwIn0.OPt_0TcXhWyO7nv3erzTsdg6tLDO5gDMPPGj4Ymm4okGjvJHMlxoNSvLyAWUIAVCMzUWcEEM2PPKFqURajvQ1d2uVu4UVxo87RAdvBPTlLr6GKfUyKnoPhRLV2KSFho5DQCUaY42Dek6bVWRbu1AD1boFUgbrR-gLQjvD3WCm-NhwV3tCX_CyQTIWV4QGKnBBDQFvxVfADcTMesPTg22i5Tjx0JySXmaoXLgYqJSdY3o1tCmEItEVg0jbcYEa5T96hMJwL2wFfxLFKDOhsmfxSXmbEWbQwFpAXi_mfarY9Qg5Unpj8t1_sFuDzoYVDU3Z6YV5LgFM3rrO8SiFc6ZWw&X-Amz-Signature=5c9910745557011e751734211f68a5df5ac69e4bad4b3672fdf91b5dd24585d1 to /home/runner/work/Humedad/Humedad/SWI_estaciones/SWI_231668_20260101.csv
+2026-06-30 15:20:29,126 - ✅ Descargado: SWI_231668_20260101
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231667_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231667_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231656_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231656_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231612_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231612_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231608_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_229804_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_229769_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_229769_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231458_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231457_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231457_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231426_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231426_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231368_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231368_20260101.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231362_20260501.csv
+2026-06-30 15:20:29,127 - ⏩ Ya existe: SWI_231362_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_231048_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_231048_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_231003_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_231003_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230994_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230994_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230993_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230993_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230986_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230986_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230958_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230958_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230918_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230918_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230848_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230848_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230801_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230801_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230709_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230709_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230667_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230667_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230381_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230352_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230352_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230068_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230010_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_230010_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229901_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229901_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229807_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229807_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229804_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229546_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229546_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229273_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229273_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229270_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_229270_20260101.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_224258_20260501.csv
+2026-06-30 15:20:29,128 - ⏩ Ya existe: SWI_224258_20260101.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_194432_20260501.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_194432_20260101.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_189087_20260501.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_189087_20260101.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_189087_20220101.csv
+2026-06-30 15:20:29,129 - ⏩ Ya existe: SWI_189087_20210901.csv
+2026-06-30 15:20:29,135 - ❌ Error mergeando 229769: 'fecha'
+2026-06-30 15:20:29,137 - ❌ Error mergeando 229273: list index out of range
+2026-06-30 15:20:29,138 - ❌ Error mergeando 231612: list index out of range
+2026-06-30 15:20:29,139 - ❌ Error mergeando 229901: list index out of range
+2026-06-30 15:20:29,140 - ❌ Error mergeando 231470: list index out of range
+2026-06-30 15:20:29,142 - ❌ Error mergeando 231003: list index out of range
+2026-06-30 15:20:29,143 - ❌ Error mergeando 224258: list index out of range
+2026-06-30 15:20:29,144 - ❌ Error mergeando 231853: list index out of range
+2026-06-30 15:20:29,145 - ❌ Error mergeando 230010: list index out of range
+2026-06-30 15:20:29,146 - ❌ Error mergeando 231528: list index out of range
+2026-06-30 15:20:29,148 - ❌ Error mergeando 230709: list index out of range
+2026-06-30 15:20:29,149 - ❌ Error mergeando 229804: list index out of range
+2026-06-30 15:20:29,150 - ❌ Error mergeando 230958: list index out of range
+2026-06-30 15:20:29,151 - ❌ Error mergeando 230986: list index out of range
+2026-06-30 15:20:29,153 - ❌ Error mergeando 231458: list index out of range
+2026-06-30 15:20:29,154 - ❌ Error mergeando 231527: list index out of range
+2026-06-30 15:20:29,155 - ❌ Error mergeando 231656: list index out of range
+2026-06-30 15:20:29,156 - ❌ Error mergeando 234462: list index out of range
+2026-06-30 15:20:29,157 - ❌ Error mergeando 231460: list index out of range
+2026-06-30 15:20:29,159 - ❌ Error mergeando 230366: list index out of range
+2026-06-30 15:20:29,160 - ❌ Error mergeando 229807: list index out of range
+2026-06-30 15:20:29,161 - ❌ Error mergeando 229546: list index out of range
+2026-06-30 15:20:29,162 - ❌ Error mergeando 230848: list index out of range
+2026-06-30 15:20:29,163 - ❌ Error mergeando 230801: list index out of range
+2026-06-30 15:20:29,164 - ❌ Error mergeando 234374: list index out of range
+2026-06-30 15:20:29,166 - ❌ Error mergeando 231668: list index out of range
+2026-06-30 15:20:29,167 - ❌ Error mergeando 230352: list index out of range
+2026-06-30 15:20:29,168 - ❌ Error mergeando 230381: list index out of range
+2026-06-30 15:20:29,169 - ❌ Error mergeando 231368: list index out of range
+2026-06-30 15:20:29,170 - ❌ Error mergeando 231426: list index out of range
+2026-06-30 15:20:29,171 - ❌ Error mergeando 231849: list index out of range
+2026-06-30 15:20:29,172 - ❌ Error mergeando 230918: list index out of range
+2026-06-30 15:20:29,174 - ❌ Error mergeando 231608: list index out of range
+2026-06-30 15:20:29,175 - ❌ Error mergeando 230667: list index out of range
+2026-06-30 15:20:29,176 - ❌ Error mergeando 230993: list index out of range
+2026-06-30 15:20:29,177 - ❌ Error mergeando 231584: list index out of range
+2026-06-30 15:20:29,178 - ❌ Error mergeando 194432: list index out of range
+2026-06-30 15:20:29,179 - ❌ Error mergeando 229270: list index out of range
+2026-06-30 15:20:29,181 - ❌ Error mergeando 230068: list index out of range
+2026-06-30 15:20:29,182 - ❌ Error mergeando 189087: list index out of range
+2026-06-30 15:20:29,183 - ❌ Error mergeando 231048: list index out of range
+2026-06-30 15:20:29,184 - ❌ Error mergeando 231854: list index out of range
+2026-06-30 15:20:29,185 - ❌ Error mergeando 231667: list index out of range
+2026-06-30 15:20:29,186 - ❌ Error mergeando 231815: list index out of range
+2026-06-30 15:20:29,187 - ❌ Error mergeando 231599: list index out of range
+2026-06-30 15:20:29,189 - ❌ Error mergeando 231362: list index out of range
+2026-06-30 15:20:29,190 - ❌ Error mergeando 231457: list index out of range
+2026-06-30 15:20:29,191 - ❌ Error mergeando 230994: list index out of range
+2026-06-30 15:20:29,191 - === FIN DESCARGA SWI ===
+2026-06-30 15:20:29,192 - 📝 Faltantes escritos en swi_faltantes.txt: 15 de 110
