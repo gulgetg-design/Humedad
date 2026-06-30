@@ -57,7 +57,7 @@ def log(msg):
 log("=== INICIO ENVÍO SWI ===")
 log(f"BASE_DIR: {BASE_DIR}")
 
-pepe = pd.read_csv(CSV_KM, sep=";")
+pepe = pd.read_csv("km_calculado.csv", sep=";")
 log(f"CSV km_calculado leído: {len(pepe)} filas")
 
 cid = os.environ.get("OPENEO_CLIENT_ID")
