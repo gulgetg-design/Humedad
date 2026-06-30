@@ -1,3 +1,4 @@
+
 """
 SWI · Script 1 de 2: ENVIAR JOBS (asincrónico, con control de cupo).
 
@@ -36,7 +37,6 @@ SWI_COLLECTION = "CLMS_SWI_GLOBAL_12_5KM_10DAILY_V4"
 SWI_BANDS = ["swi001", "swi005", "swi010", "swi015",
              "swi020", "swi040", "swi060", "swi100"]
 
-
 # Período y tamaño de ventana
 FECHA_INICIO = "2026-01-01"
 FECHA_FIN    = date.today().strftime("%Y-%m-%d")
@@ -57,7 +57,7 @@ def log(msg):
 log("=== INICIO ENVÍO SWI ===")
 log(f"BASE_DIR: {BASE_DIR}")
 
-pepe = pd.read_csv("km_calculado.csv", sep=";")
+pepe = pd.read_csv(CSV_KM, sep=";")
 log(f"CSV km_calculado leído: {len(pepe)} filas")
 
 cid = os.environ.get("OPENEO_CLIENT_ID")
@@ -103,12 +103,52 @@ def esperar_cupo():
         time.sleep(INTERVALO_ESPERA)
 
 # ───────────────────────────────────────────────────────────────────
-# Títulos de jobs ya existentes (para no reenviar lo ya mandado)
+# QUÉ VENTANAS YA ESTÁN CUBIERTAS (para NO reenviar al pedo)
+# Una ventana se SALTEA si:
+#   - ya está descargada en la carpeta (parcial crudo o consolidado), o
+#   - tiene un job ACTIVO (queued / running / created), o
+#   - tiene un job TERMINADO esperando descarga (finished)
+# Una ventana se ENVÍA si:
+#   - no existe en ningún lado, o
+#   - su último job quedó en ERROR (hay que reintentar)
 # ───────────────────────────────────────────────────────────────────
+output_folder = os.path.join(BASE_DIR, "SWI_estaciones")
+os.makedirs(output_folder, exist_ok=True)
+
+# 1) Títulos ya DESCARGADOS: archivos crudos SWI_{est}_{AAAAMMDD}.csv en la carpeta
+descargados = set()
+patron_crudo = re.compile(r"^(SWI_\d+_\d{8})\.csv$")
+for f in os.listdir(output_folder):
+    m = patron_crudo.match(f)
+    if m:
+        descargados.add(m.group(1))   # ej. "SWI_231457_20210101"
+
+# 2) Estado de los jobs en la API, por título
+ESTADOS_VIVOS = {"queued", "running", "created", "queued_for_start", "finished"}
+jobs_vivos = set()      # títulos que NO hay que reenviar (activos o listos)
+jobs_con_error = set()  # títulos que SÍ hay que reenviar
 try:
-    existentes = {j.get("title", "") for j in connection.list_jobs()}
-except Exception:
-    existentes = set()
+    for j in connection.list_jobs():
+        t = j.get("title", "")
+        if not t.startswith("SWI_"):
+            continue
+        estado = j.get("status", "")
+        if estado == "error":
+            jobs_con_error.add(t)
+        elif estado in ESTADOS_VIVOS:
+            jobs_vivos.add(t)
+except Exception as e:
+    log(f"⚠️ No se pudo listar jobs ({e}). Se usa solo la carpeta como referencia.")
+
+# Un título se considera "cubierto" si está descargado o tiene job vivo,
+# PERO si está en error igual se reenvía (gana el error).
+def ya_cubierto(title):
+    if title in jobs_con_error:
+        return False   # tuvo error -> reenviar
+    return title in descargados or title in jobs_vivos
+
+log(f"Ya descargados: {len(descargados)} | jobs vivos: {len(jobs_vivos)} | "
+    f"con error (a reintentar): {len(jobs_con_error)}")
 
 # ───────────────────────────────────────────────────────────────────
 # RECORRER ESTACIONES × VENTANAS Y ENVIAR
@@ -131,9 +171,10 @@ for _, fila in estaciones.iterrows():
         # título único por estación+ventana (el _ del rango se reemplaza por -)
         v = desde.replace("-", "")
         title = f"SWI_{id_estacion}_{v}"
-        if title in existentes:
-            log(f"  ⏩ Ya enviado: {title}")
-            continue
+        if ya_cubierto(title):
+            continue   # ya descargado / activo / listo -> no reenviar
+        if title in jobs_con_error:
+            log(f"  ♻️ Reintentando (tuvo error): {title}")
 
         esperar_cupo()   # esperar lugar ANTES de enviar
         try:
@@ -148,6 +189,9 @@ for _, fila in estaciones.iterrows():
             log(f"  📤 Enviado: {title} → {job.job_id}")
             time.sleep(10)
         except Exception as e:
+            log(f"  ❌ Error enviando {title}: {e}")
+
+log("=== FIN ENVÍO SWI ===")
             log(f"  ❌ Error enviando {title}: {e}")
 
 log("=== FIN ENVÍO SWI ===")
