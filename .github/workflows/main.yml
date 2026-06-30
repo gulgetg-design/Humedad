@@ -2,58 +2,79 @@ name: SWI Data Pipeline
 
 on:
   schedule:
-    # Corre cada 45 minutos automáticamente (puedes ajustar el tiempo)
+    # Corre cada 45 minutos automáticamente
     - cron: '*/45 * * * *'
   workflow_dispatch:
-    # Esto te permite activar el proceso manualmente desde la web de GitHub si no quieres esperar al cron
+
+# ─── 1. EVITA QUE DOS RUNNERS CORRAN AL MISMO TIEMPO Y SE PIXEN ───
+concurrency:
+  group: swi-pipeline-group
+  cancel-in-progress: false # Si uno está corriendo, el nuevo espera su turno en cola
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    
     permissions:
-      contents: write
+      contents: write # Permiso clave de escritura
 
     steps:
-    # 1. Clonar el repositorio en la máquina virtual
+    # 1. Clonar el repositorio
     - name: Checkout del repositorio
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Trae todo el historial para que los pulls funcionen mejor
 
-    # 2. Configurar el entorno de Python
+    # 2. Configurar Python
     - name: Configurar Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        cache: 'pip' # Optimiza el tiempo instalando dependencias
 
-    # 3. Instalar las dependencias necesarias
+    # 3. Instalar dependencias
     - name: Instalar dependencias
       run: |
         python -m pip install --upgrade pip
         pip install pandas geopandas openeo python-dateutil pyarrow
 
-    # 4. Crear la carpeta de salida si no existe y recuperar descargas previas
-    # Usamos Git para mantener el estado de lo que ya se descargó en ejecuciones anteriores
+    # 4. Ejecutar Script 1 - Enviar Jobs
     - name: Ejecutar Script 1 - Enviar Jobs
       env:
         OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
         OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+        PYTHONUNBUFFERED: "1"
       run: python swi_1_enviar.py
 
-    # 5. Ejecutar el Script 2 - Descargar y Consolidar
+    # 5. Ejecutar Script 2 - Descargar Jobs
     - name: Ejecutar Script 2 - Descargar Jobs
       env:
         OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
         OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+        PYTHONUNBUFFERED: "1"
       run: python swi_2_descargar.py
 
-    # 6. Guardar los CSVs descargados de vuelta en tu repositorio de GitHub
-    # De esta forma, la próxima vez que corra el Action, sabrá qué estaciones ya se completaron.
-    # 6. Guardar los CSVs descargados de vuelta en tu repositorio de GitHub
+    # 6. Guardar los CSVs y logs con estrategia anti-conflictos
     - name: Guardar cambios y descargas en el repositorio
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        
+        # Agregamos los archivos modificados
         git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
         
-        # ─── MODIFICAMOS ESTA LÍNEA ABAJO PARA INCLUIR EL PULL REBASE ───
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Actualización automática de datos SWI [skip ci]" && git pull --rebase origin main && git push)
+        # Si no hay cambios reales, el script termina pacíficamente aquí
+        if git diff --staged --quiet; then
+          echo "No hay datos nuevos ni cambios en los logs para guardar."
+          exit 0
+        fi
+        
+        # Si hay cambios, hacemos el commit local
+        git commit -m "Actualización automática de datos SWI [skip ci]"
+        
+        # ─── ESTRATEGIA ANTI-REJECTED ───
+        # Trae lo último de GitHub y, si alguien modificó el log en el camino, 
+        # acomoda lo nuestro por encima de forma limpia (-X ours)
+        git pull --rebase -X ours origin main
+        
+        # Finalmente empujamos los datos a la web
+        git push origin main
