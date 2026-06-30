@@ -55,27 +55,28 @@ jobs:
 
     # 6. Guardar los CSVs y logs con estrategia anti-conflictos
     # 6. Guardar los CSVs y logs con estrategia anti-conflictos definitiva
+    # 6. Guardar los CSVs y logs con estrategia anti-conflictos definitiva
     - name: Guardar cambios y descargas en el repositorio
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # 1. Traemos la última información de GitHub al entorno oculto de Git
+        # 1. Traemos la última información real de la web
         git fetch origin main
         
-        # 2. Movemos el "reloj" de Git al último commit de la web.
-        # Esto mantiene intactos todos tus CSVs nuevos y logs modificados en el disco.
+        # 2. Forzamos a Git a pararse sobre el último commit de la web.
+        # Esto mantiene intactos tus CSVs nuevos y logs modificados en el disco.
         git reset --mixed origin main
         
         # 3. Agregamos la carpeta de datos y los archivos de log
         git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
         
-        # 4. Si no hay cambios reales frente a lo último que está en la web, salimos pacíficamente
+        # 4. Si no hay cambios reales frente a la web, salimos pacíficamente
         if git diff --staged --quiet; then
           echo "No hay datos nuevos ni cambios en los logs para guardar."
           exit 0
         fi
         
-        # 5. Creamos el commit y subimos directamente (será un push directo y limpio)
+        # 5. Creamos el commit y subimos de forma directa (fast-forward limpio)
         git commit -m "Actualización automática de datos SWI [skip ci]"
         git push origin main
