@@ -54,3 +54,21 @@
 2026-06-30 06:17:10,840 -    - SWI_230986_20260101: running
 2026-06-30 06:17:10,840 -    - SWI_230958_20260101: running
 2026-06-30 06:17:10,840 - === FIN (esperando que terminen) ===
+2026-06-30 10:22:04,245 - === INICIO DESCARGA SWI ===
+2026-06-30 10:22:04,246 - Loaded openEO client config from sources: []
+2026-06-30 10:22:06,275 - Found OIDC providers: ['CDSE']
+2026-06-30 10:22:06,275 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-06-30 10:22:07,026 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-03305422-8f0c-4234-bc98-cda401383433')
+2026-06-30 10:22:08,416 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-06-30 10:22:08,416 - Autenticado OK.
+2026-06-30 10:22:08,704 - Jobs SWI encontrados: 100
+2026-06-30 10:22:08,704 - ⏳ Faltan terminar 8 jobs. No se descarga aún.
+2026-06-30 10:22:08,704 -    - SWI_231457_20260501: queued
+2026-06-30 10:22:08,704 -    - SWI_231457_20260101: queued
+2026-06-30 10:22:08,704 -    - SWI_231426_20260501: queued
+2026-06-30 10:22:08,704 -    - SWI_231426_20260101: queued
+2026-06-30 10:22:08,704 -    - SWI_231368_20260501: queued
+2026-06-30 10:22:08,704 -    - SWI_231368_20260101: queued
+2026-06-30 10:22:08,704 -    - SWI_231362_20260501: queued
+2026-06-30 10:22:08,704 -    - SWI_231362_20260101: running
+2026-06-30 10:22:08,704 - === FIN (esperando que terminen) ===
