@@ -2,81 +2,67 @@ name: SWI Data Pipeline
 
 on:
   schedule:
-    # Corre cada 45 minutos automáticamente
-    - cron: '*/45 * * * *'
-  workflow_dispatch:
+    - cron: '*/45 * * * *'      # cada 45 minutos
+  workflow_dispatch:            # botón manual
 
-# ─── 1. EVITA QUE DOS RUNNERS CORRAN AL MISMO TIEMPO Y SE PIXEN ───
+# Evita que dos corridas se pisen: la nueva espera en cola
 concurrency:
   group: swi-pipeline-group
-  cancel-in-progress: false # Si uno está corriendo, el nuevo espera su turno en cola
+  cancel-in-progress: false
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 350
     permissions:
-      contents: write # Permiso clave de escritura
+      contents: write
 
     steps:
-    # 1. Clonar el repositorio
-    - name: Checkout del repositorio
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 # Trae todo el historial para que los pulls funcionen mejor
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    # 2. Configurar Python
-    - name: Configurar Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    # 3. Instalar dependencias
-    - name: Instalar dependencias
-      run: |
-        python -m pip install --upgrade pip
-        pip install pandas geopandas openeo python-dateutil pyarrow
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas geopandas openeo python-dateutil pyarrow
 
-    # 4. Ejecutar Script 1 - Enviar Jobs
-    #- name: Ejecutar Script 1 - Enviar Jobs
-    #  env:
-    #    OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
-    #    OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
-    #    PYTHONUNBUFFERED: "1"
-    # run: python swi_1_enviar.py
+      - name: Script 1 — Enviar jobs (solo los que faltan)
+        env:
+          OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
+          OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+          PYTHONUNBUFFERED: "1"
+        run: python swi_1_enviar.py
 
-    # 5. Ejecutar Script 2 - Descargar Jobs
-    - name: Ejecutar Script 2 - Descargar Jobs
-      env:
-        OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
-        OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
-        PYTHONUNBUFFERED: "1"
-      run: python swi_2_descargar.py
+      - name: Script 2 — Descargar jobs listos y reportar faltantes
+        env:
+          OPENEO_CLIENT_ID: ${{ secrets.OPENEO_CLIENT_ID }}
+          OPENEO_CLIENT_SECRET: ${{ secrets.OPENEO_CLIENT_SECRET }}
+          PYTHONUNBUFFERED: "1"
+        run: python swi_2_descargar.py
 
-    # 6. Guardar los CSVs y logs con estrategia anti-conflictos
-    # 6. Guardar los CSVs y logs con estrategia anti-conflictos definitiva
-    # 6. Guardar los CSVs y logs con estrategia anti-conflictos definitiva
-    - name: Guardar cambios y descargas en el repositorio
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # 1. Traemos la última información real de la web
-        git fetch origin main
-        
-        # 2. Forzamos a Git a pararse sobre el último commit de la web.
-        # Esto mantiene intactos tus CSVs nuevos y logs modificados en el disco.
-        git reset --mixed origin main
-        
-        # 3. Agregamos la carpeta de datos y los archivos de log
-        git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt
-        
-        # 4. Si no hay cambios reales frente a la web, salimos pacíficamente
-        if git diff --staged --quiet; then
-          echo "No hay datos nuevos ni cambios en los logs para guardar."
-          exit 0
-        fi
-        
-        # 5. Creamos el commit y subimos de forma directa (fast-forward limpio)
-        git commit -m "Actualización automática de datos SWI [skip ci]"
-        git push origin main
+      - name: Guardar datos, logs y faltantes en el repo
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Pararse sobre el último commit remoto sin perder los archivos nuevos del disco
+          git fetch origin main
+          git reset --mixed origin/main
+
+          # Agregar datos + logs + reporte de faltantes
+          git add SWI_estaciones/ log_swi_envio.txt log_swi_descarga.txt swi_faltantes.txt
+
+          if git diff --staged --quiet; then
+            echo "No hay datos nuevos ni cambios para guardar."
+            exit 0
+          fi
+
+          git commit -m "Actualización automática SWI [skip ci]"
+          git push origin main
