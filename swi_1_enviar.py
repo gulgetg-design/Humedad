@@ -192,6 +192,4 @@ for _, fila in estaciones.iterrows():
             log(f"  ❌ Error enviando {title}: {e}")
 
 log("=== FIN ENVÍO SWI ===")
-            log(f"  ❌ Error enviando {title}: {e}")
-
-log("=== FIN ENVÍO SWI ===")
+     
