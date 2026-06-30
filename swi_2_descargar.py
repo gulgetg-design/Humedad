@@ -25,8 +25,8 @@ CSV_KM = r"C:\Users\xaxa41\OneDrive - PAE\Documentos\Trabajos\Volumen - Predicci
 output_folder = os.path.join(BASE_DIR, "SWI_estaciones")
 os.makedirs(output_folder, exist_ok=True)
 
-SWI_BANDS = ["SWI_002", "SWI_005", "SWI_010", "SWI_015",
-             "SWI_020", "SWI_040", "SWI_060", "SWI_100"]
+SWI_BANDS = ["swi001", "swi005", "swi010", "swi015",
+             "swi020", "swi040", "swi060", "swi100"]
 SWI_SCALE = 0.5
 SWI_NODATA = 255
 
