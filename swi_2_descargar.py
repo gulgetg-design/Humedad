@@ -119,7 +119,7 @@ for jinfo in terminados:
 # ───────────────────────────────────────────────────────────────────
 # 3. MERGE INCREMENTAL POR ESTACIÓN (junta todas las ventanas)
 # ───────────────────────────────────────────────────────────────────
-pepe = pd.read_csv(CSV_KM, sep=";")
+pepe = pd.read_csv("km_calculado.csv", sep=";")
 estaciones = (pepe.groupby("SHIP TO")["km_calculado"].min()
               .sort_values().index.tolist())
 
