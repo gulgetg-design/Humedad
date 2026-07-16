@@ -38,11 +38,11 @@ SWI_BANDS = ["swi001", "swi005", "swi010", "swi015",
              "swi020", "swi040", "swi060", "swi100"]
 
 # Período y tamaño de ventana
-FECHA_INICIO = "2021-01-01"
+FECHA_INICIO = "2026-05-31"
 FECHA_FIN    = date.today().strftime("%Y-%m-%d")
 VENTANA_MESES = 4
 
-ESTADOS_ACTIVOS = {"queued", "running", "created", "queued_for_start"}
+ESTADOS_ACTIVOS = {"queued", "running", "queued_for_start"}
 
 # ───────────────────────────────────────────────────────────────────
 # LOGGING
