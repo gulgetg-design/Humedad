@@ -1,4 +1,4 @@
-# Reporte de faltantes SWI — 2026-07-17
+# Reporte de faltantes SWI — 2026-07-18
 # Esperadas: 55 estaciones × 2 ventanas = 110
 # Descargadas: 169 | Faltan: 0
 
