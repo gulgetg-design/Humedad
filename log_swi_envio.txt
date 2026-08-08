@@ -5149,3 +5149,17 @@
 2026-08-08 20:02:56,723 - Ya descargados: 169 | jobs vivos: 55 | con error (a reintentar): 0
 2026-08-08 20:02:56,724 - Estaciones: 55 → 55 jobs totales
 2026-08-08 20:02:56,878 - === FIN ENVÍO SWI ===
+2026-08-08 21:06:00,160 - === INICIO ENVÍO SWI ===
+2026-08-08 21:06:00,160 - BASE_DIR: /home/runner/work/Humedad/Humedad
+2026-08-08 21:06:00,162 - CSV km_calculado leído: 55 filas
+2026-08-08 21:06:00,162 - Loaded openEO client config from sources: []
+2026-08-08 21:06:02,540 - Autenticando...
+2026-08-08 21:06:02,705 - Found OIDC providers: ['CDSE']
+2026-08-08 21:06:02,705 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-08-08 21:06:03,986 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-08-08 21:06:04,689 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-08-08 21:06:04,689 - Autenticado OK.
+2026-08-08 21:06:04,689 - Ventanas de 4 meses: 1 (2026-05-31 → 2026-08-08)
+2026-08-08 21:06:05,135 - Ya descargados: 169 | jobs vivos: 55 | con error (a reintentar): 0
+2026-08-08 21:06:05,136 - Estaciones: 55 → 55 jobs totales
+2026-08-08 21:06:05,234 - === FIN ENVÍO SWI ===
