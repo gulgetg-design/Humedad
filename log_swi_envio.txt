@@ -14746,3 +14746,62 @@
 2026-10-01 20:35:24,055 -   ✅ Hay lugar (6/30 activos).
 2026-10-01 20:35:27,723 -   📤 Enviado: SWI_231938_20260930 → j-26100120352447faa96bafb66ece5b9d
 2026-10-01 20:35:37,746 - === FIN ENVÍO SWI ===
+2026-10-02 00:15:09,565 - === INICIO ENVÍO SWI ===
+2026-10-02 00:15:09,565 - BASE_DIR: /home/runner/work/Humedad/Humedad
+2026-10-02 00:15:09,568 - CSV km_calculado leído: 55 filas
+2026-10-02 00:15:09,568 - Loaded openEO client config from sources: []
+2026-10-02 00:15:11,630 - Autenticando...
+2026-10-02 00:15:11,779 - Found OIDC providers: ['CDSE']
+2026-10-02 00:15:11,779 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-10-02 00:15:12,842 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-02 00:15:14,073 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-02 00:15:14,073 - Autenticado OK.
+2026-10-02 00:15:14,073 - Ventanas de 4 meses: 2 (2026-05-31 → 2026-10-02)
+2026-10-02 00:15:14,500 - Ya descargados: 169 | jobs vivos: 40 | con error (a reintentar): 15
+2026-10-02 00:15:14,501 - Estaciones: 55 → 110 jobs totales
+2026-10-02 00:15:14,507 -   ♻️ Reintentando (tuvo error): SWI_189087_20260930
+2026-10-02 00:15:14,834 -   ✅ Hay lugar (0/30 activos).
+2026-10-02 00:15:18,143 -   📤 Enviado: SWI_189087_20260930 → j-2610020015154923af74f24ec3683d1d
+2026-10-02 00:15:28,157 -   ♻️ Reintentando (tuvo error): SWI_194432_20260930
+2026-10-02 00:15:28,394 -   ✅ Hay lugar (1/30 activos).
+2026-10-02 00:15:31,086 -   📤 Enviado: SWI_194432_20260930 → j-2610020015284e9ebd1e312dff52f35e
+2026-10-02 00:15:41,100 -   ♻️ Reintentando (tuvo error): SWI_224258_20260930
+2026-10-02 00:15:41,428 -   ✅ Hay lugar (2/30 activos).
+2026-10-02 00:15:45,035 -   📤 Enviado: SWI_224258_20260930 → j-26100200154145638c8c528b58415c0a
+2026-10-02 00:15:55,049 -   ♻️ Reintentando (tuvo error): SWI_229270_20260930
+2026-10-02 00:15:55,374 -   ✅ Hay lugar (3/30 activos).
+2026-10-02 00:15:59,021 -   📤 Enviado: SWI_229270_20260930 → j-26100200155547e0b0e4d02145520c8a
+2026-10-02 00:16:09,041 -   ♻️ Reintentando (tuvo error): SWI_229804_20260930
+2026-10-02 00:16:09,385 -   ✅ Hay lugar (4/30 activos).
+2026-10-02 00:16:13,144 -   📤 Enviado: SWI_229804_20260930 → j-2610020016094a4da02bfb73c8269f78
+2026-10-02 00:16:23,158 -   ♻️ Reintentando (tuvo error): SWI_229807_20260930
+2026-10-02 00:16:23,412 -   ✅ Hay lugar (4/30 activos).
+2026-10-02 00:16:26,355 -   📤 Enviado: SWI_229807_20260930 → j-26100200162343ef95867f8b26eb856b
+2026-10-02 00:16:36,414 -   ♻️ Reintentando (tuvo error): SWI_231457_20260930
+2026-10-02 00:16:36,647 -   ✅ Hay lugar (5/30 activos).
+2026-10-02 00:16:39,465 -   📤 Enviado: SWI_231457_20260930 → j-26100200163649fca308b02714e4aa08
+2026-10-02 00:16:49,485 -   ♻️ Reintentando (tuvo error): SWI_231527_20260930
+2026-10-02 00:16:49,777 -   ✅ Hay lugar (6/30 activos).
+2026-10-02 00:16:52,509 -   📤 Enviado: SWI_231527_20260930 → j-26100200165044d680d98d6493a3488f
+2026-10-02 00:17:02,522 -   ♻️ Reintentando (tuvo error): SWI_231528_20260930
+2026-10-02 00:17:02,890 -   ✅ Hay lugar (7/30 activos).
+2026-10-02 00:17:06,255 -   📤 Enviado: SWI_231528_20260930 → j-261002001703462dac9dbe3ff982e50e
+2026-10-02 00:17:16,269 -   ♻️ Reintentando (tuvo error): SWI_231584_20260930
+2026-10-02 00:17:16,517 -   ✅ Hay lugar (8/30 activos).
+2026-10-02 00:17:19,977 -   📤 Enviado: SWI_231584_20260930 → j-261002001716420b85df34985bd46504
+2026-10-02 00:17:29,991 -   ♻️ Reintentando (tuvo error): SWI_231599_20260930
+2026-10-02 00:17:30,272 -   ✅ Hay lugar (9/30 activos).
+2026-10-02 00:17:33,708 -   📤 Enviado: SWI_231599_20260930 → j-261002001730434eba03486eeda5b00e
+2026-10-02 00:17:43,722 -   ♻️ Reintentando (tuvo error): SWI_231608_20260930
+2026-10-02 00:17:44,062 -   ✅ Hay lugar (8/30 activos).
+2026-10-02 00:17:47,458 -   📤 Enviado: SWI_231608_20260930 → j-2610020017444a699518d1c4864d0351
+2026-10-02 00:17:57,491 -   ♻️ Reintentando (tuvo error): SWI_231879_20260930
+2026-10-02 00:17:57,717 -   ✅ Hay lugar (9/30 activos).
+2026-10-02 00:18:01,231 -   📤 Enviado: SWI_231879_20260930 → j-26100200175743ad8d9f6f98e40380e4
+2026-10-02 00:18:11,244 -   ♻️ Reintentando (tuvo error): SWI_231895_20260930
+2026-10-02 00:18:11,696 -   ✅ Hay lugar (10/30 activos).
+2026-10-02 00:18:15,487 -   📤 Enviado: SWI_231895_20260930 → j-26100200181149da9ce99630334a1e86
+2026-10-02 00:18:25,501 -   ♻️ Reintentando (tuvo error): SWI_231938_20260930
+2026-10-02 00:18:25,844 -   ✅ Hay lugar (10/30 activos).
+2026-10-02 00:18:28,676 -   📤 Enviado: SWI_231938_20260930 → j-2610020018264dbeb663ed1a91f11fad
+2026-10-02 00:18:38,698 - === FIN ENVÍO SWI ===
