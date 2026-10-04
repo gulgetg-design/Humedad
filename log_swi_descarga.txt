@@ -118878,3 +118878,70 @@
 2026-10-04 18:35:45,046 - ❌ Error mergeando 230994: list index out of range
 2026-10-04 18:35:45,047 - === FIN DESCARGA SWI ===
 2026-10-04 18:35:45,048 - 📝 Faltantes escritos en swi_faltantes.txt: 55 de 165
+2026-10-04 22:12:00,700 - === INICIO DESCARGA SWI ===
+2026-10-04 22:12:00,700 - Loaded openEO client config from sources: []
+2026-10-04 22:12:03,300 - Found OIDC providers: ['CDSE']
+2026-10-04 22:12:03,301 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-10-04 22:12:04,131 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-04 22:12:04,886 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-04 22:12:04,886 - Autenticado OK.
+2026-10-04 22:12:05,198 - Jobs SWI encontrados: 100
+2026-10-04 22:12:05,198 - ❌ 71 jobs con ERROR: ['SWI_231048_20260930', 'SWI_231003_20260930', 'SWI_230994_20260930', 'SWI_230993_20260930', 'SWI_230986_20260930', 'SWI_230958_20260930', 'SWI_230918_20260930', 'SWI_230848_20260930', 'SWI_230801_20260930', 'SWI_230709_20260930']...
+2026-10-04 22:12:05,198 - ✅ Descargando 0 jobs terminados...
+2026-10-04 22:12:05,205 - ❌ Error mergeando 229769: 'fecha'
+2026-10-04 22:12:05,206 - ❌ Error mergeando 229273: list index out of range
+2026-10-04 22:12:05,208 - ❌ Error mergeando 231612: list index out of range
+2026-10-04 22:12:05,209 - ❌ Error mergeando 229901: list index out of range
+2026-10-04 22:12:05,210 - ❌ Error mergeando 231470: list index out of range
+2026-10-04 22:12:05,211 - ❌ Error mergeando 231895: list index out of range
+2026-10-04 22:12:05,212 - ❌ Error mergeando 231003: list index out of range
+2026-10-04 22:12:05,213 - ❌ Error mergeando 224258: list index out of range
+2026-10-04 22:12:05,214 - ❌ Error mergeando 231853: list index out of range
+2026-10-04 22:12:05,215 - ❌ Error mergeando 230010: list index out of range
+2026-10-04 22:12:05,216 - ❌ Error mergeando 234169: list index out of range
+2026-10-04 22:12:05,217 - ❌ Error mergeando 231995: list index out of range
+2026-10-04 22:12:05,218 - ❌ Error mergeando 231528: list index out of range
+2026-10-04 22:12:05,219 - ❌ Error mergeando 231879: list index out of range
+2026-10-04 22:12:05,220 - ❌ Error mergeando 230709: list index out of range
+2026-10-04 22:12:05,221 - ❌ Error mergeando 229804: list index out of range
+2026-10-04 22:12:05,222 - ❌ Error mergeando 230958: list index out of range
+2026-10-04 22:12:05,223 - ❌ Error mergeando 230986: list index out of range
+2026-10-04 22:12:05,224 - ❌ Error mergeando 231873: list index out of range
+2026-10-04 22:12:05,225 - ❌ Error mergeando 231458: list index out of range
+2026-10-04 22:12:05,226 - ❌ Error mergeando 231527: list index out of range
+2026-10-04 22:12:05,227 - ❌ Error mergeando 231656: list index out of range
+2026-10-04 22:12:05,229 - ❌ Error mergeando 234462: list index out of range
+2026-10-04 22:12:05,230 - ❌ Error mergeando 231460: list index out of range
+2026-10-04 22:12:05,231 - ❌ Error mergeando 230366: list index out of range
+2026-10-04 22:12:05,232 - ❌ Error mergeando 229807: list index out of range
+2026-10-04 22:12:05,233 - ❌ Error mergeando 229546: list index out of range
+2026-10-04 22:12:05,234 - ❌ Error mergeando 230848: list index out of range
+2026-10-04 22:12:05,235 - ❌ Error mergeando 234076: list index out of range
+2026-10-04 22:12:05,236 - ❌ Error mergeando 230801: list index out of range
+2026-10-04 22:12:05,237 - ❌ Error mergeando 234374: list index out of range
+2026-10-04 22:12:05,238 - ❌ Error mergeando 231668: list index out of range
+2026-10-04 22:12:05,239 - ❌ Error mergeando 230352: list index out of range
+2026-10-04 22:12:05,240 - ❌ Error mergeando 230381: list index out of range
+2026-10-04 22:12:05,241 - ❌ Error mergeando 231368: list index out of range
+2026-10-04 22:12:05,242 - ❌ Error mergeando 231426: list index out of range
+2026-10-04 22:12:05,243 - ❌ Error mergeando 231849: list index out of range
+2026-10-04 22:12:05,245 - ❌ Error mergeando 230918: list index out of range
+2026-10-04 22:12:05,246 - ❌ Error mergeando 231608: list index out of range
+2026-10-04 22:12:05,247 - ❌ Error mergeando 230667: list index out of range
+2026-10-04 22:12:05,248 - ❌ Error mergeando 230993: list index out of range
+2026-10-04 22:12:05,249 - ❌ Error mergeando 231584: list index out of range
+2026-10-04 22:12:05,250 - ❌ Error mergeando 194432: list index out of range
+2026-10-04 22:12:05,251 - ❌ Error mergeando 229270: list index out of range
+2026-10-04 22:12:05,252 - ❌ Error mergeando 231938: list index out of range
+2026-10-04 22:12:05,253 - ❌ Error mergeando 230068: list index out of range
+2026-10-04 22:12:05,254 - ❌ Error mergeando 189087: list index out of range
+2026-10-04 22:12:05,255 - ❌ Error mergeando 231048: list index out of range
+2026-10-04 22:12:05,256 - ❌ Error mergeando 231854: list index out of range
+2026-10-04 22:12:05,257 - ❌ Error mergeando 231667: list index out of range
+2026-10-04 22:12:05,258 - ❌ Error mergeando 231815: list index out of range
+2026-10-04 22:12:05,259 - ❌ Error mergeando 231599: list index out of range
+2026-10-04 22:12:05,260 - ❌ Error mergeando 231362: list index out of range
+2026-10-04 22:12:05,261 - ❌ Error mergeando 231457: list index out of range
+2026-10-04 22:12:05,262 - ❌ Error mergeando 230994: list index out of range
+2026-10-04 22:12:05,263 - === FIN DESCARGA SWI ===
+2026-10-04 22:12:05,264 - 📝 Faltantes escritos en swi_faltantes.txt: 55 de 165
