@@ -18403,3 +18403,182 @@
 2026-10-06 09:38:36,650 -   ✅ Hay lugar (26/30 activos).
 2026-10-06 09:38:40,169 -   📤 Enviado: SWI_234462_20260930 → j-26100609383741f4aca5cc71b14b06c1
 2026-10-06 09:38:50,179 - === FIN ENVÍO SWI ===
+2026-10-06 16:17:00,856 - === INICIO ENVÍO SWI ===
+2026-10-06 16:17:00,856 - BASE_DIR: /home/runner/work/Humedad/Humedad
+2026-10-06 16:17:00,858 - CSV km_calculado leído: 55 filas
+2026-10-06 16:17:00,858 - Loaded openEO client config from sources: []
+2026-10-06 16:17:02,896 - Autenticando...
+2026-10-06 16:17:03,036 - Found OIDC providers: ['CDSE']
+2026-10-06 16:17:03,037 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-10-06 16:17:03,838 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-06 16:17:04,656 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-06 16:17:04,656 - Autenticado OK.
+2026-10-06 16:17:04,657 - Ventanas de 4 meses: 2 (2026-05-31 → 2026-10-06)
+2026-10-06 16:17:05,132 - Ya descargados: 169 | jobs vivos: 0 | con error (a reintentar): 55
+2026-10-06 16:17:05,132 - Estaciones: 55 → 110 jobs totales
+2026-10-06 16:17:05,138 -   ♻️ Reintentando (tuvo error): SWI_189087_20260930
+2026-10-06 16:17:05,455 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:06,273 -   ❌ Error enviando SWI_189087_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: af8de9a6-c615-4a24-bf2d-df0239d2b260)
+2026-10-06 16:17:06,277 -   ♻️ Reintentando (tuvo error): SWI_194432_20260930
+2026-10-06 16:17:06,556 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:07,300 -   ❌ Error enviando SWI_194432_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: a45becd7-c19a-4367-a610-fada485a893b)
+2026-10-06 16:17:07,304 -   ♻️ Reintentando (tuvo error): SWI_224258_20260930
+2026-10-06 16:17:07,538 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:08,258 -   ❌ Error enviando SWI_224258_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 55a68faa-e1bc-4bb8-8ccf-814f7343c88f)
+2026-10-06 16:17:08,262 -   ♻️ Reintentando (tuvo error): SWI_229270_20260930
+2026-10-06 16:17:08,578 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:09,311 -   ❌ Error enviando SWI_229270_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 1a512046-bb09-4475-9993-3e232df5f385)
+2026-10-06 16:17:09,315 -   ♻️ Reintentando (tuvo error): SWI_229273_20260930
+2026-10-06 16:17:09,596 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:10,226 -   ❌ Error enviando SWI_229273_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 22dd9a72-e140-4c65-9171-8941bbb34729)
+2026-10-06 16:17:10,230 -   ♻️ Reintentando (tuvo error): SWI_229546_20260930
+2026-10-06 16:17:10,452 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:11,138 -   ❌ Error enviando SWI_229546_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: af03ad57-0ef4-4d9d-8f53-c74910ab77d7)
+2026-10-06 16:17:11,142 -   ♻️ Reintentando (tuvo error): SWI_229769_20260930
+2026-10-06 16:17:11,389 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:12,026 -   ❌ Error enviando SWI_229769_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: d6fa0e3e-03bb-4b98-8346-1280a79bf5b7)
+2026-10-06 16:17:12,030 -   ♻️ Reintentando (tuvo error): SWI_229804_20260930
+2026-10-06 16:17:12,307 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:12,947 -   ❌ Error enviando SWI_229804_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 76db0525-0eac-4bc6-b0b4-9329a0f683ad)
+2026-10-06 16:17:12,950 -   ♻️ Reintentando (tuvo error): SWI_229807_20260930
+2026-10-06 16:17:13,294 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:14,019 -   ❌ Error enviando SWI_229807_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 14c05d23-e2db-480c-8e27-500976feef2d)
+2026-10-06 16:17:14,023 -   ♻️ Reintentando (tuvo error): SWI_229901_20260930
+2026-10-06 16:17:14,254 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:14,985 -   ❌ Error enviando SWI_229901_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 78999a09-08b1-44d0-b4a9-1c596c1400d0)
+2026-10-06 16:17:14,989 -   ♻️ Reintentando (tuvo error): SWI_230010_20260930
+2026-10-06 16:17:15,265 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:15,967 -   ❌ Error enviando SWI_230010_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: d8e27586-f2c3-4b26-ae2c-ce623ad6a71b)
+2026-10-06 16:17:15,971 -   ♻️ Reintentando (tuvo error): SWI_230068_20260930
+2026-10-06 16:17:16,210 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:16,814 -   ❌ Error enviando SWI_230068_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 101cfa24-7a06-4fba-bbdc-5971e7cd9af8)
+2026-10-06 16:17:16,818 -   ♻️ Reintentando (tuvo error): SWI_230352_20260930
+2026-10-06 16:17:17,140 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:17,754 -   ❌ Error enviando SWI_230352_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: e86f0dff-a0fc-4a5a-9b9b-3d981026efd5)
+2026-10-06 16:17:17,757 -   ♻️ Reintentando (tuvo error): SWI_230366_20260930
+2026-10-06 16:17:18,019 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:18,715 -   ❌ Error enviando SWI_230366_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: c8ab316d-9868-44a0-aba5-865d7d39063f)
+2026-10-06 16:17:18,718 -   ♻️ Reintentando (tuvo error): SWI_230381_20260930
+2026-10-06 16:17:19,053 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:19,666 -   ❌ Error enviando SWI_230381_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 66c648ec-10b2-45e5-b030-6f2008d6fc27)
+2026-10-06 16:17:19,670 -   ♻️ Reintentando (tuvo error): SWI_230667_20260930
+2026-10-06 16:17:19,971 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:20,659 -   ❌ Error enviando SWI_230667_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 3b70abc6-5f18-411d-b4e6-f25ad7360c7f)
+2026-10-06 16:17:20,663 -   ♻️ Reintentando (tuvo error): SWI_230709_20260930
+2026-10-06 16:17:20,857 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:21,534 -   ❌ Error enviando SWI_230709_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 70fff503-8f70-4ce3-b8dd-a39393deb082)
+2026-10-06 16:17:21,538 -   ♻️ Reintentando (tuvo error): SWI_230801_20260930
+2026-10-06 16:17:21,804 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:22,503 -   ❌ Error enviando SWI_230801_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: c018768f-cc76-41f7-a940-dbcad9b52fec)
+2026-10-06 16:17:22,507 -   ♻️ Reintentando (tuvo error): SWI_230848_20260930
+2026-10-06 16:17:22,870 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:23,478 -   ❌ Error enviando SWI_230848_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 93b4e953-180b-4e1c-8eb5-38c6e9d9d028)
+2026-10-06 16:17:23,482 -   ♻️ Reintentando (tuvo error): SWI_230918_20260930
+2026-10-06 16:17:23,713 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:24,361 -   ❌ Error enviando SWI_230918_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 1b216309-5d5a-4f28-94dc-dc45b6d0f568)
+2026-10-06 16:17:24,364 -   ♻️ Reintentando (tuvo error): SWI_230958_20260930
+2026-10-06 16:17:24,687 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:25,303 -   ❌ Error enviando SWI_230958_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: bc15a442-46a1-4bc3-8cd9-2412405166aa)
+2026-10-06 16:17:25,307 -   ♻️ Reintentando (tuvo error): SWI_230986_20260930
+2026-10-06 16:17:25,656 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:26,359 -   ❌ Error enviando SWI_230986_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 73bfb6e5-86d1-4b0e-86c7-b51355e03701)
+2026-10-06 16:17:26,363 -   ♻️ Reintentando (tuvo error): SWI_230993_20260930
+2026-10-06 16:17:26,650 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:27,302 -   ❌ Error enviando SWI_230993_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 06b090ad-0e73-4d51-9465-56954dd3ec50)
+2026-10-06 16:17:27,306 -   ♻️ Reintentando (tuvo error): SWI_230994_20260930
+2026-10-06 16:17:27,513 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:28,146 -   ❌ Error enviando SWI_230994_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: db85f409-09f3-4eb1-a294-b6cd1abf0a27)
+2026-10-06 16:17:28,150 -   ♻️ Reintentando (tuvo error): SWI_231003_20260930
+2026-10-06 16:17:28,380 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:28,973 -   ❌ Error enviando SWI_231003_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: baa73b63-0f07-4f9c-8ad0-33e30916a871)
+2026-10-06 16:17:28,977 -   ♻️ Reintentando (tuvo error): SWI_231048_20260930
+2026-10-06 16:17:29,240 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:29,954 -   ❌ Error enviando SWI_231048_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 258d7209-a7a7-4266-85ff-cc8c052e93ce)
+2026-10-06 16:17:29,958 -   ♻️ Reintentando (tuvo error): SWI_231362_20260930
+2026-10-06 16:17:30,322 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:31,001 -   ❌ Error enviando SWI_231362_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 638b280c-87bb-4551-91f7-5fa38f4d0ed1)
+2026-10-06 16:17:31,005 -   ♻️ Reintentando (tuvo error): SWI_231368_20260930
+2026-10-06 16:17:31,244 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:31,932 -   ❌ Error enviando SWI_231368_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 048e270f-5d54-43da-bf9d-f742c17cf885)
+2026-10-06 16:17:31,936 -   ♻️ Reintentando (tuvo error): SWI_231426_20260930
+2026-10-06 16:17:32,532 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:33,251 -   ❌ Error enviando SWI_231426_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 41d6c566-42ea-4de7-9319-e946c2c9c117)
+2026-10-06 16:17:33,255 -   ♻️ Reintentando (tuvo error): SWI_231457_20260930
+2026-10-06 16:17:33,559 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:34,176 -   ❌ Error enviando SWI_231457_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 17d0bbb1-f30b-4694-ba9e-49ef1e35b53e)
+2026-10-06 16:17:34,179 -   ♻️ Reintentando (tuvo error): SWI_231458_20260930
+2026-10-06 16:17:34,510 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:35,212 -   ❌ Error enviando SWI_231458_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: d621de31-c62f-48ae-b09e-108ca89f8352)
+2026-10-06 16:17:35,216 -   ♻️ Reintentando (tuvo error): SWI_231460_20260930
+2026-10-06 16:17:35,444 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:36,053 -   ❌ Error enviando SWI_231460_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 887809ab-b14f-4489-bc6a-30273634e62e)
+2026-10-06 16:17:36,056 -   ♻️ Reintentando (tuvo error): SWI_231470_20260930
+2026-10-06 16:17:36,281 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:37,046 -   ❌ Error enviando SWI_231470_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: e6ade63c-25d0-4252-bbed-da77116409e6)
+2026-10-06 16:17:37,050 -   ♻️ Reintentando (tuvo error): SWI_231527_20260930
+2026-10-06 16:17:37,304 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:37,914 -   ❌ Error enviando SWI_231527_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 0f3e4230-9365-4d50-b8c4-e7b217b11436)
+2026-10-06 16:17:37,918 -   ♻️ Reintentando (tuvo error): SWI_231528_20260930
+2026-10-06 16:17:38,271 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:39,037 -   ❌ Error enviando SWI_231528_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 9aa29227-3e04-484d-8e64-0918c2db31ed)
+2026-10-06 16:17:39,041 -   ♻️ Reintentando (tuvo error): SWI_231584_20260930
+2026-10-06 16:17:39,332 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:39,939 -   ❌ Error enviando SWI_231584_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 10c208c7-b883-479f-9acf-10ea89e756ef)
+2026-10-06 16:17:39,943 -   ♻️ Reintentando (tuvo error): SWI_231599_20260930
+2026-10-06 16:17:40,171 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:40,806 -   ❌ Error enviando SWI_231599_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 768d1243-f775-4990-a015-247868451a11)
+2026-10-06 16:17:40,810 -   ♻️ Reintentando (tuvo error): SWI_231608_20260930
+2026-10-06 16:17:41,039 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:41,704 -   ❌ Error enviando SWI_231608_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 826b0468-a0af-4e51-a63b-2139a3367afa)
+2026-10-06 16:17:41,708 -   ♻️ Reintentando (tuvo error): SWI_231612_20260930
+2026-10-06 16:17:41,951 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:42,634 -   ❌ Error enviando SWI_231612_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: f30be483-46f0-467a-bd9a-e16b7b312fc8)
+2026-10-06 16:17:42,638 -   ♻️ Reintentando (tuvo error): SWI_231656_20260930
+2026-10-06 16:17:42,993 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:43,718 -   ❌ Error enviando SWI_231656_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 35192737-13cf-4e50-9a82-ba3a445e51f7)
+2026-10-06 16:17:43,722 -   ♻️ Reintentando (tuvo error): SWI_231667_20260930
+2026-10-06 16:17:43,983 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:44,720 -   ❌ Error enviando SWI_231667_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 4d40ccbf-2bf4-4d6f-b005-84e636591d6c)
+2026-10-06 16:17:44,724 -   ♻️ Reintentando (tuvo error): SWI_231668_20260930
+2026-10-06 16:17:44,971 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:45,616 -   ❌ Error enviando SWI_231668_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 1cf26503-c82d-4df0-83c8-d0dd4c47e1ac)
+2026-10-06 16:17:45,620 -   ♻️ Reintentando (tuvo error): SWI_231815_20260930
+2026-10-06 16:17:45,845 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:46,534 -   ❌ Error enviando SWI_231815_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: c397fc49-eba8-45d2-8cb0-7fa468e4f3b2)
+2026-10-06 16:17:46,538 -   ♻️ Reintentando (tuvo error): SWI_231849_20260930
+2026-10-06 16:17:46,763 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:47,672 -   ❌ Error enviando SWI_231849_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: b61ad521-bacf-4575-be03-be9f7847eb5c)
+2026-10-06 16:17:47,676 -   ♻️ Reintentando (tuvo error): SWI_231853_20260930
+2026-10-06 16:17:47,885 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:48,491 -   ❌ Error enviando SWI_231853_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 2cdc55cc-cbe3-4ff7-aded-f9b0c8f6f141)
+2026-10-06 16:17:48,495 -   ♻️ Reintentando (tuvo error): SWI_231854_20260930
+2026-10-06 16:17:48,788 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:49,565 -   ❌ Error enviando SWI_231854_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 9dc6a226-981d-43a5-a1e0-9b8eb89a3904)
+2026-10-06 16:17:49,569 -   ♻️ Reintentando (tuvo error): SWI_231873_20260930
+2026-10-06 16:17:49,790 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:50,408 -   ❌ Error enviando SWI_231873_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: f0ab7092-e132-49a3-8ccd-4bca2d4fb8bb)
+2026-10-06 16:17:50,412 -   ♻️ Reintentando (tuvo error): SWI_231879_20260930
+2026-10-06 16:17:50,652 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:51,283 -   ❌ Error enviando SWI_231879_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 7a2e453e-2f7e-4ac0-a619-77dc370ce803)
+2026-10-06 16:17:51,287 -   ♻️ Reintentando (tuvo error): SWI_231895_20260930
+2026-10-06 16:17:51,580 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:52,178 -   ❌ Error enviando SWI_231895_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 63252048-ce0e-4237-8251-9ffb83bb27b6)
+2026-10-06 16:17:52,182 -   ♻️ Reintentando (tuvo error): SWI_231938_20260930
+2026-10-06 16:17:52,432 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:53,060 -   ❌ Error enviando SWI_231938_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 9c77289a-189a-4bfe-821f-20ecf5de780c)
+2026-10-06 16:17:53,064 -   ♻️ Reintentando (tuvo error): SWI_231995_20260930
+2026-10-06 16:17:53,275 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:53,979 -   ❌ Error enviando SWI_231995_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 4b561d82-9680-4122-a4f9-0059cc482604)
+2026-10-06 16:17:53,983 -   ♻️ Reintentando (tuvo error): SWI_234076_20260930
+2026-10-06 16:17:54,345 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:54,945 -   ❌ Error enviando SWI_234076_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 99348f76-c1cd-4530-89e0-34af605d92c8)
+2026-10-06 16:17:54,949 -   ♻️ Reintentando (tuvo error): SWI_234169_20260930
+2026-10-06 16:17:55,175 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:55,782 -   ❌ Error enviando SWI_234169_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: 99c7d492-a21a-420b-9a79-e59b666c18d0)
+2026-10-06 16:17:55,786 -   ♻️ Reintentando (tuvo error): SWI_234374_20260930
+2026-10-06 16:17:56,023 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:56,817 -   ❌ Error enviando SWI_234374_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: f61ee731-57da-4294-81f2-fe533a8246ba)
+2026-10-06 16:17:56,820 -   ♻️ Reintentando (tuvo error): SWI_234462_20260930
+2026-10-06 16:17:57,036 -   ✅ Hay lugar (0/30 activos).
+2026-10-06 16:17:57,655 -   ❌ Error enviando SWI_234462_20260930: [402] PaymentRequired: You do not have sufficient credits to perform this request. Please visit https://marketplace-portal.dataspace.copernicus.eu/pages/pricing to find more information on how to buy additional credits. (ref: f138c3fa-c0b4-4eb5-8686-a8e951847f90)
+2026-10-06 16:17:57,655 - === FIN ENVÍO SWI ===
