@@ -18913,3 +18913,277 @@
 2026-10-09 23:51:02,199 - Ya descargados: 169 | jobs vivos: 55 | con error (a reintentar): 0
 2026-10-09 23:51:02,200 - Estaciones: 55 → 110 jobs totales
 2026-10-09 23:51:02,351 - === FIN ENVÍO SWI ===
+2026-10-10 04:43:52,574 - === INICIO ENVÍO SWI ===
+2026-10-10 04:43:52,574 - BASE_DIR: /home/runner/work/Humedad/Humedad
+2026-10-10 04:43:52,576 - CSV km_calculado leído: 55 filas
+2026-10-10 04:43:52,576 - Loaded openEO client config from sources: []
+2026-10-10 04:43:54,523 - Autenticando...
+2026-10-10 04:43:54,661 - Found OIDC providers: ['CDSE']
+2026-10-10 04:43:54,661 - No OIDC provider given, but only one available: 'CDSE'. Using that one.
+2026-10-10 04:43:55,649 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-10 04:43:56,301 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-10 04:43:56,301 - Autenticado OK.
+2026-10-10 04:43:56,301 - Ventanas de 4 meses: 2 (2026-05-31 → 2026-10-10)
+2026-10-10 04:43:56,558 - ⚠️ No se pudo listar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100443564dec9d94bfbdfb4d95c0)). Se usa solo la carpeta como referencia.
+2026-10-10 04:43:56,558 - Ya descargados: 169 | jobs vivos: 0 | con error (a reintentar): 0
+2026-10-10 04:43:56,559 - Estaciones: 55 → 110 jobs totales
+2026-10-10 04:43:56,835 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100443564707ad090861cb981e34)). Reintento en 120s.
+2026-10-10 04:45:57,043 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100445564361ba8ca00cfa65bda3)). Reintento en 120s.
+2026-10-10 04:47:57,329 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010044757407c875e59ce49cb5ffe)). Reintento en 120s.
+2026-10-10 04:49:57,541 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100449574968bc7450348b4bc192)). Reintento en 120s.
+2026-10-10 04:51:57,806 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101004515741299dc900e6b0286bb6)). Reintento en 120s.
+2026-10-10 04:53:58,071 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100453574582b5329c837a73cfcb)). Reintento en 120s.
+2026-10-10 04:55:58,293 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101004555845d9965b32b23f9fbfac)). Reintento en 120s.
+2026-10-10 04:57:58,497 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010045758470bb787543d24da4b29)). Reintento en 120s.
+2026-10-10 04:59:58,783 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100459584f5497dec05dc923d29d)). Reintento en 120s.
+2026-10-10 05:01:59,055 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010050158463ea20f64ef677921ed)). Reintento en 120s.
+2026-10-10 05:03:59,390 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100503594ab391672ba94c25a0d7)). Reintento en 120s.
+2026-10-10 05:05:59,602 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010050559442dad688b5a366ab704)). Reintento en 120s.
+2026-10-10 05:07:59,870 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010050759422285ec6f63b73b455f)). Reintento en 120s.
+2026-10-10 05:10:00,081 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005095946a1997c66140a4d5e9a)). Reintento en 120s.
+2026-10-10 05:12:00,267 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005120042749022a1f1488bb037)). Reintento en 120s.
+2026-10-10 05:14:00,492 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005140049f9b3f318fbc46a9164)). Reintento en 120s.
+2026-10-10 05:16:00,716 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-10 05:16:02,214 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-10 05:16:02,215 - Obtained new access token (grant 'client_credentials'). Reason: OIDC access token expired (403 TokenInvalid).
+2026-10-10 05:16:02,418 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100516024772a23e071cec215684)). Reintento en 120s.
+2026-10-10 05:18:02,668 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005180241b287c70569a4106d9d)). Reintento en 120s.
+2026-10-10 05:20:02,949 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100520024f4da8f521aed4d0511c)). Reintento en 120s.
+2026-10-10 05:22:03,241 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005220345328b21e31dc4113740)). Reintento en 120s.
+2026-10-10 05:24:03,527 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100524034653926a77744d51aa51)). Reintento en 120s.
+2026-10-10 05:26:03,811 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005260346f18009aee309117072)). Reintento en 120s.
+2026-10-10 05:28:04,115 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005280344668a42d5560f0c8f6d)). Reintento en 120s.
+2026-10-10 05:30:04,344 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005300441408ed2bb5267e99c4c)). Reintento en 120s.
+2026-10-10 05:32:04,576 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100532044584893325771fabc666)). Reintento en 120s.
+2026-10-10 05:34:04,872 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-261010053404414485474d173a4d285a)). Reintento en 120s.
+2026-10-10 05:36:05,151 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100536054771bdb4cff29ce637ea)). Reintento en 120s.
+2026-10-10 05:38:05,411 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100538054d05b0be8b5fa6978d14)). Reintento en 120s.
+2026-10-10 05:40:05,787 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100540054420ad4777a3a6cb3014)). Reintento en 120s.
+2026-10-10 05:42:06,056 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-26101005420545f29d4a446a4d03eaec)). Reintento en 120s.
+2026-10-10 05:44:06,325 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100544064bbd8fa7cd96001f97dc)). Reintento en 120s.
+2026-10-10 05:46:06,502 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100546064c85b7abf33e0310d941)). Reintento en 120s.
+2026-10-10 05:48:06,734 -   ⚠️ No se pudo consultar jobs ([500] Internal: Server error: EjrApiResponseError("Error communicating with the openEO job database system. For transient errors it might be enough to retry. Details: 502 'Bad Gateway' on `POST https://ejr-api-v2.eu-nl.openeo.v1.dataspace.copernicus.eu/jobs/search/paginated?size=100`: Bad Gateway") (ref: r-2610100548064cc286e85778f07c81ad)). Reintento en 120s.
+2026-10-10 05:50:07,014 - Doing 'client_credentials' token request 'https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token' with post data fields ['grant_type', 'client_id', 'client_secret', 'scope'] (client_id 'sh-a3c40c10-b251-4463-a5f0-bef84b8f9a97')
+2026-10-10 05:50:07,941 - Obtained tokens: ['token_type', 'access_token', 'expires_in', 'id_token', 'scope']
+2026-10-10 05:50:07,941 - Obtained new access token (grant 'client_credentials'). Reason: OIDC access token expired (403 TokenInvalid).
+2026-10-10 05:50:08,255 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:08,676 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:08 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:08,676 -   ❌ Error enviando SWI_189087_20260930: [503] no available server
+
+2026-10-10 05:50:08,987 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:09,256 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:09 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:09,257 -   ❌ Error enviando SWI_194432_20260930: [503] no available server
+
+2026-10-10 05:50:09,576 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:09,870 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:09 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:09,871 -   ❌ Error enviando SWI_224258_20260930: [503] no available server
+
+2026-10-10 05:50:10,173 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:10,445 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:10 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:10,445 -   ❌ Error enviando SWI_229270_20260930: [503] no available server
+
+2026-10-10 05:50:10,662 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:10,931 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:10 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:10,931 -   ❌ Error enviando SWI_229273_20260930: [503] no available server
+
+2026-10-10 05:50:11,146 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:11,414 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:11 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:11,414 -   ❌ Error enviando SWI_229546_20260930: [503] no available server
+
+2026-10-10 05:50:11,638 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:11,906 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:11 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:11,907 -   ❌ Error enviando SWI_229769_20260930: [503] no available server
+
+2026-10-10 05:50:12,115 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:12,385 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:12 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:12,385 -   ❌ Error enviando SWI_229804_20260930: [503] no available server
+
+2026-10-10 05:50:12,603 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:12,871 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:12 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:12,871 -   ❌ Error enviando SWI_229807_20260930: [503] no available server
+
+2026-10-10 05:50:13,074 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:13,344 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:13 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:13,345 -   ❌ Error enviando SWI_229901_20260930: [503] no available server
+
+2026-10-10 05:50:13,635 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:13,906 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:13 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:13,906 -   ❌ Error enviando SWI_230010_20260930: [503] no available server
+
+2026-10-10 05:50:14,195 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:14,500 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:14 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:14,500 -   ❌ Error enviando SWI_230068_20260930: [503] no available server
+
+2026-10-10 05:50:14,800 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:15,069 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:15 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:15,069 -   ❌ Error enviando SWI_230352_20260930: [503] no available server
+
+2026-10-10 05:50:15,357 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:15,628 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:15 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:15,629 -   ❌ Error enviando SWI_230366_20260930: [503] no available server
+
+2026-10-10 05:50:15,846 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:16,116 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:16 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:16,116 -   ❌ Error enviando SWI_230381_20260930: [503] no available server
+
+2026-10-10 05:50:16,368 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:16,636 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:16 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:16,637 -   ❌ Error enviando SWI_230667_20260930: [503] no available server
+
+2026-10-10 05:50:16,817 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:17,086 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:17 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:17,087 -   ❌ Error enviando SWI_230709_20260930: [503] no available server
+
+2026-10-10 05:50:17,292 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:17,561 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:17 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:17,561 -   ❌ Error enviando SWI_230801_20260930: [503] no available server
+
+2026-10-10 05:50:17,770 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:18,040 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:17 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:18,041 -   ❌ Error enviando SWI_230848_20260930: [503] no available server
+
+2026-10-10 05:50:18,250 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:18,519 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:18 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:18,520 -   ❌ Error enviando SWI_230918_20260930: [503] no available server
+
+2026-10-10 05:50:18,730 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:19,000 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:18 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:19,000 -   ❌ Error enviando SWI_230958_20260930: [503] no available server
+
+2026-10-10 05:50:19,223 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:19,495 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:19 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:19,495 -   ❌ Error enviando SWI_230986_20260930: [503] no available server
+
+2026-10-10 05:50:19,698 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:19,967 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:19 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:19,967 -   ❌ Error enviando SWI_230993_20260930: [503] no available server
+
+2026-10-10 05:50:20,293 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:20,564 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:20 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:20,564 -   ❌ Error enviando SWI_230994_20260930: [503] no available server
+
+2026-10-10 05:50:20,890 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:21,160 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:21 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:21,161 -   ❌ Error enviando SWI_231003_20260930: [503] no available server
+
+2026-10-10 05:50:21,377 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:21,648 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:21 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:21,648 -   ❌ Error enviando SWI_231048_20260930: [503] no available server
+
+2026-10-10 05:50:21,852 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:22,121 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:22 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:22,121 -   ❌ Error enviando SWI_231362_20260930: [503] no available server
+
+2026-10-10 05:50:22,322 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:22,592 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:22 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:22,592 -   ❌ Error enviando SWI_231368_20260930: [503] no available server
+
+2026-10-10 05:50:22,812 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:23,092 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:23 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:23,092 -   ❌ Error enviando SWI_231426_20260930: [503] no available server
+
+2026-10-10 05:50:23,325 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:23,612 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:23 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:23,612 -   ❌ Error enviando SWI_231457_20260930: [503] no available server
+
+2026-10-10 05:50:23,818 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:24,088 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:24 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:24,088 -   ❌ Error enviando SWI_231458_20260930: [503] no available server
+
+2026-10-10 05:50:24,297 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:24,568 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:24 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:24,568 -   ❌ Error enviando SWI_231460_20260930: [503] no available server
+
+2026-10-10 05:50:24,915 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:25,188 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:25 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:25,188 -   ❌ Error enviando SWI_231470_20260930: [503] no available server
+
+2026-10-10 05:50:25,400 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:25,669 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:25 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:25,669 -   ❌ Error enviando SWI_231527_20260930: [503] no available server
+
+2026-10-10 05:50:25,989 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:26,259 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:26 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:26,259 -   ❌ Error enviando SWI_231528_20260930: [503] no available server
+
+2026-10-10 05:50:26,587 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:26,865 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:26 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:26,866 -   ❌ Error enviando SWI_231584_20260930: [503] no available server
+
+2026-10-10 05:50:27,180 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:27,453 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:27 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:27,453 -   ❌ Error enviando SWI_231599_20260930: [503] no available server
+
+2026-10-10 05:50:27,677 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:27,991 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:27 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:27,991 -   ❌ Error enviando SWI_231608_20260930: [503] no available server
+
+2026-10-10 05:50:28,205 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:28,473 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:28 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:28,474 -   ❌ Error enviando SWI_231612_20260930: [503] no available server
+
+2026-10-10 05:50:28,754 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:29,027 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:28 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:29,027 -   ❌ Error enviando SWI_231656_20260930: [503] no available server
+
+2026-10-10 05:50:29,325 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:29,595 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:29 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:29,595 -   ❌ Error enviando SWI_231667_20260930: [503] no available server
+
+2026-10-10 05:50:29,797 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:30,066 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:30 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:30,066 -   ❌ Error enviando SWI_231668_20260930: [503] no available server
+
+2026-10-10 05:50:30,279 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:30,548 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:30 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:30,548 -   ❌ Error enviando SWI_231815_20260930: [503] no available server
+
+2026-10-10 05:50:30,833 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:31,100 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:31 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:31,100 -   ❌ Error enviando SWI_231849_20260930: [503] no available server
+
+2026-10-10 05:50:31,413 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:31,682 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:31 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:31,683 -   ❌ Error enviando SWI_231853_20260930: [503] no available server
+
+2026-10-10 05:50:31,993 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:32,263 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:32 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:32,263 -   ❌ Error enviando SWI_231854_20260930: [503] no available server
+
+2026-10-10 05:50:32,604 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:32,872 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:32 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:32,872 -   ❌ Error enviando SWI_231873_20260930: [503] no available server
+
+2026-10-10 05:50:33,163 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:33,434 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:33 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:33,434 -   ❌ Error enviando SWI_231879_20260930: [503] no available server
+
+2026-10-10 05:50:33,677 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:33,945 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:33 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:33,945 -   ❌ Error enviando SWI_231895_20260930: [503] no available server
+
+2026-10-10 05:50:34,157 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:34,427 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:34 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:34,427 -   ❌ Error enviando SWI_231938_20260930: [503] no available server
+
+2026-10-10 05:50:34,764 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:35,033 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:34 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:35,033 -   ❌ Error enviando SWI_231995_20260930: [503] no available server
+
+2026-10-10 05:50:35,245 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:35,515 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:35 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:35,515 -   ❌ Error enviando SWI_234076_20260930: [503] no available server
+
+2026-10-10 05:50:35,733 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:36,003 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:35 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:36,003 -   ❌ Error enviando SWI_234169_20260930: [503] no available server
+
+2026-10-10 05:50:36,224 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:36,494 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:36 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:36,494 -   ❌ Error enviando SWI_234374_20260930: [503] no available server
+
+2026-10-10 05:50:36,731 -   ✅ Hay lugar (0/30 activos).
+2026-10-10 05:50:37,008 - Failed to parse API error response: [503] 'no available server\n' (headers: {'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Date': 'Sat, 10 Oct 2026 05:50:36 GMT', 'Content-Length': '20'})
+2026-10-10 05:50:37,008 -   ❌ Error enviando SWI_234462_20260930: [503] no available server
+
+2026-10-10 05:50:37,008 - === FIN ENVÍO SWI ===
